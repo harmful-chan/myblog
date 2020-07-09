@@ -10,13 +10,13 @@
 
 升级好内核之后，安装qemu，一款软件模拟硬件参数的虚拟机，其实他的效率不怎么样，但是它简单啊。运行`yum -y install qemu`如果说系统找不到这个软件，运行`yum -y install epel-release && yum clean all && yum makecache`导入epel的源，里面才是大部分我们白嫖党用到的软件。然后`qemu-system-x86_64 --version`有输出就安装好了。（qemu系列说明在最后）gcc的话用`yum -y install gcc make` 安装。
 
-![image-20200530180200879](http://chf.cool:9000/myblog/img/image-20200530180200879.png)
+![image-20200530180200879](http://img.hfzs.store/myblog/img/image-20200530180200879.png)
 
 ### 2. 编译x86_64架构linux内核及运行
 
 首先我们需要下载linux源码**http://ftp.sjtu.edu.cn/sites/ftp.kernel.org/pub/linux/kernel/v3.x/linux-3.18.84.tar.xz**这个好像是清华的源下的快点，需要不同版本把linux的版本改下直接下载就行。解压`tar -xvf linux-3.16.84.tar.xz `然后`cd linux-3.16.84 && make help`能查看官方提供的配置，里面就包含`1386_defconfig和x86_64_defconfig`分别对应两种不同的架构的模块配置。为了确保依赖`yum -y install  glibc glibc-utils glibc-devel`安装编译C程序基本的库，如果等下编译内核错误，应该是漏了这几个。然后就可以进到内核目录`make x86_64_defconfig && make -j2`（j后面跟的是用于编译的cpu线程数量），然后就过漫长的等待，`ls -la linux-3.16.84/arch/x86_64/boot`查看编译好的内核。**如果编译失败，请先执行make mrproper清理全部生成文件，再从配置开始**
 
-![image-20200530175940690](http://chf.cool:9000/myblog/img/image-20200530175940690.png)
+![image-20200530175940690](http://img.hfzs.store/myblog/img/image-20200530175940690.png)
 
 ### 3. 编写一个hello程序用于测试
 
@@ -40,7 +40,7 @@ int main()
 
 最好如果没报错的话就用qemu把他们都运行起来` qemu-system-x86_64 -kernel linux-3.16.84/arch/x86/boot/bzImage -initrd hello/rootfs.img -nographic --append "console=ttyS0"`-kernel执行驱动内核，-initrd指定启动的第一个程序，-nographic不弹出新窗口，--append指定追加额外参数，console=ttyS0指定用本窗口的串口设备输出加载信息。然后看到hello world输出那你就成功了第一步了。退出qemu用`（ctrl + a ）松开马上按x `
 
-![image-20200530182113235](http://chf.cool:9000/myblog/img/image-20200530182113235.png)
+![image-20200530182113235](http://img.hfzs.store/myblog/img/image-20200530182113235.png)
 
 ## 二、给内核添加调试信息，gdb调试内核
 
@@ -48,7 +48,7 @@ int main()
 
 上一部分所生成的bzImage相当于一个release版本的内核，下面我们要生成一个带调试信息的development版内核。先安装配置菜单的包`yum -y install ncurses-devel`然后到我们的linux目录下清理现场，然后运行配置菜单`cd linux-3.16.84 && make mrproper && make menuconfig `然后会弹出一蓝蓝的框。
 
-![image-20200530185100472](http://chf.cool:9000/myblog/img/image-20200530185100472.png)
+![image-20200530185100472](http://img.hfzs.store/myblog/img/image-20200530185100472.png)
 
 然后把添加调试信息项打上星号，光标移动到对应位置按空格就行（默认已经打上了，位置在kernel hacking --> Compile-time checks and compiler options -->[*]compile the kernel with debug info）然后SAVE再EXIT就行。配置之后`make -j2`。上一步我们已经成功生成内核的话，这一步就没多大问题，只是时间比之前长5倍左右...
 
@@ -82,13 +82,13 @@ gdb源码`wget https://mirror.bjtu.edu.cn/gnu/gdb/gdb-7.6.1.tar.gz `版本可以
 
 修改之后`cd gdb-7.6.1 && ./configure && make -j2`配置并编译，这是可能会遇到很多编译问题要自己查了，我查了很久按我上面方法是最快的。编译好删除官方的gdb`yum remove gdb`，然后安装我们自己编译的`make install`会把可执行文件放到/usr/local/bin/中，gdb -v有输出就ok了。
 
-![image-20200530191705995](http://chf.cool:9000/myblog/img/image-20200530191705995.png)
+![image-20200530191705995](http://img.hfzs.store/myblog/img/image-20200530191705995.png)
 
 接下来就是用gdb命令行调试内核，先打开两个窗口，左运行gdb右运行linux。左`gdb linux-3.16.84/vmlinux`vmlinux是代码索引文件，右`qemu-system-x86_64 -kernel linux-3.16.84/arch/x86/boot/bzImage -initr d hello/rootfs.img -nographic --append "console=ttyS0" -s -S`-s -S 启动之后等待有控制信息再往下执行。
 
 先运行虚拟机，然后运行gdb，在gdb窗口连接本地的1234端口，然后再start_kernel打断点然后顺序执行。
 
-![running](http://chf.cool:9000/myblog/img/running.gif)
+![running](http://img.hfzs.store/myblog/img/running.gif)
 
 ## 三、VSCode搭建远程调试环境
 
@@ -96,7 +96,7 @@ vscode上微软官网下载就行，然后我们需要两个插件VScode Remote�
 
 
 
-![image-20200530194341225](http://chf.cool:9000/myblog/img/image-20200530194341225.png)
+![image-20200530194341225](http://img.hfzs.store/myblog/img/image-20200530194341225.png)
 
 然后配置vscode的启动配置文件，在目录新建一个.vscode/launch.json文件，有时候vscode你按f5会帮你自动生成模板的，但快捷键我不知道哪个....写入如下信息。其实这个c++程序的调试模板，所以按着c++的程序配置就行。
 
@@ -122,9 +122,9 @@ vscode上微软官网下载就行，然后我们需要两个插件VScode Remote�
     ]
 </code><pre></details>
 
-![image-20200530194717853](http://chf.cool:9000/myblog/img/image-20200530194717853.png)
+![image-20200530194717853](http://img.hfzs.store/myblog/img/image-20200530194717853.png)
 
-![debug](http://chf.cool:9000/myblog/img/debug.gif)
+![debug](http://img.hfzs.store/myblog/img/debug.gif)
 
 
 

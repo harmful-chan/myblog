@@ -2,7 +2,7 @@
 
 OpenWRT给出的：**https://openwrt.org/toh/hwdata/tp-link/tp-link_tl-wdr6500_v2**官网都没那么全
 
-![image-20200523191456720](http://hfzs.store:9000/myblog/img/image-20200523191456720.png)
+![image-20200523191456720](http://img.hfzs.store/myblog/img/image-20200523191456720.png)
 
 ## 一、刷系统
 
@@ -10,9 +10,9 @@ OpenWRT给出的：**https://openwrt.org/toh/hwdata/tp-link/tp-link_tl-wdr6500_v
 
 需要的硬件软件：TP-LINK WDR6500 V2，Breed固件，OpenWRT WDR6500 专用固件
 
-breed：**http://hfzs.store:9000/file/openwrt/wdr6500v2.bin**
+breed：**http://img.hfzs.store/file/openwrt/wdr6500v2.bin**
 
-专用固件：**http://hfzs.store:9000/file/openwrt/openwrt-18.06.2-ar71xx-generic-tl-wdr6500-v2-squashfs-factory.bin**
+专用固件：**http://img.hfzs.store/file/openwrt/openwrt-18.06.2-ar71xx-generic-tl-wdr6500-v2-squashfs-factory.bin**
 
 (自己家的服务器，心情不好能会关，有需要艾特一下我吧哈哈)
 
@@ -22,7 +22,7 @@ breed：**http://hfzs.store:9000/file/openwrt/wdr6500v2.bin**
 
 这时重启好之后还是之前的tp-link配置页面，需要按下reset键（有个圆形小孔）持续几秒钟，直到led不挺闪烁，松开reset，等待几秒钟，再输入网址192.169.1.1登录配置界面，就能看到breed的配置界面。
 
-![1-1](http://hfzs.store:9000/myblog/img/1-1.png)
+![1-1](http://img.hfzs.store/myblog/img/1-1.png)
 
 ### 2. 烧OpenWRT固件
 
@@ -30,19 +30,19 @@ breed：**http://hfzs.store:9000/file/openwrt/wdr6500v2.bin**
 
 在breed 的固件更新界面，勾选固件上传xxx-factory.bin，自动重启，点击开始刷固件就行。过一会重新登录192.168.1.1就能看到OpenWRT的界面。首次登录用户名是root，没有密码，直接确定就行
 
-![image-20200521232303731](http://hfzs.store:9000/myblog/img/image-20200521232303731.png)
+![image-20200521232303731](http://img.hfzs.store/myblog/img/image-20200521232303731.png)
 
 ### 3. 汉化
 
 web界面安装中文包。点击system下的software，filter 输入luci-i18n-base-zh-cn，点击查找，把找到的包装了会自动更新界面的。可能会遇到搜不出来的问题，可能是你wan口没插好，或者dns配置有误，本文最后会教如何解决。
 
-![image-20200521233010076](http://hfzs.store:9000/myblog/img/image-20200521233010076.png)
+![image-20200521233010076](http://img.hfzs.store/myblog/img/image-20200521233010076.png)
 
 ### 4. 设置LAN口和WAN口
 
 基本上路由器wan口插上能外网的网线，lan口插上你的PC机，pc机网卡设置自动获取就能获得192.168.1.0/24的IP地址，没别的需求的话已经能用了。但往下我们需要配置pptp服务器，所以先把WAN口和LAN口设置一个静态IP。LAN口为192.168.1.1/24开DHCP，WAN口192.168.31.254/24关DHCP，因为我想外网访问所以wan要设置个IP。到此为止用web界面做的配置就配置完了，pc机也能正常上网了，下面开始命令行配置pptpd。
 
-![image-20200523120845642](http://hfzs.store:9000/myblog/img/image-20200523120845642.png)
+![image-20200523120845642](http://img.hfzs.store/myblog/img/image-20200523120845642.png)
 
 ## 二、配置pptp server
 
@@ -50,7 +50,7 @@ web界面安装中文包。点击system下的software，filter 输入luci-i18n-b
 
 本文用的是xshell客户端，如果是win10系统的话直接在命令行敲`ssh root@192.168.1.1`因为win10自带了ssh客户端，openwrt默认的用户是root，IP默认是192.168.1.1，如果LAN设置了其他IP对着来改就是。然后敲yes保存公钥，然后输入密码（输入的密码是看不见的，密码默认为空，直接敲回车）。然后就连上了。
 
-![image-20200523122826582](http://hfzs.store:9000/myblog/img/image-20200523122826582.png)
+![image-20200523122826582](http://img.hfzs.store/myblog/img/image-20200523122826582.png)
 
 ### 2. 安装pptp
 
@@ -63,7 +63,7 @@ $ opkg install pptpd kmod-mppe ppp    #最好分三条命令安装着三个包
 
 下面是安装好的样子。
 
-![image-20200523123432830](http://hfzs.store:9000/myblog/img/image-20200523123432830.png)
+![image-20200523123432830](http://img.hfzs.store/myblog/img/image-20200523123432830.png)
 
 然后就是配置pptpd了，官方有三个配置文件可以修改/etc/pptpd.conf，/etc/ppp/options.pptpd，/etc/ppp/chap-secrets但OpenWRT提供了一个更简单的配置方法直接配置/etc/config/pptpd，就可以满足日常需要
 
@@ -88,7 +88,7 @@ config 'login'
 
 下面是我的本机配置。
 
-![image-20200523124820230](http://hfzs.store:9000/myblog/img/image-20200523124820230.png)
+![image-20200523124820230](http://img.hfzs.store/myblog/img/image-20200523124820230.png)
 
 然后就可以启动pptpd啦，然后看一下是否成功监听1723端口
 
@@ -100,7 +100,7 @@ $ netstat -antp    # 查看端口1723
 
 下面是我本机的例子。
 
-![image-20200523125602980](http://hfzs.store:9000/myblog/img/image-20200523125602980.png)
+![image-20200523125602980](http://img.hfzs.store/myblog/img/image-20200523125602980.png)
 
 ### 3. 连接vpn
 
@@ -108,7 +108,7 @@ $ netstat -antp    # 查看端口1723
 
 我是先开打cmd，telnet到OpenWRT的1723端口发现是通的，端口是没问题的，
 
-![telnet](http://hfzs.store:9000/myblog/img/telnet.gif)
+![telnet](http://img.hfzs.store/myblog/img/telnet.gif)
 
 百度了一下发现是18.x版本去除了个模块要手动安装，参考**https://blog.csdn.net/boliang319/article/details/49755701**，官方**https://oldwiki.archive.openwrt.org/doc/howto/vpn.nat.pptp**
 
@@ -174,7 +174,7 @@ $ iptables -t nat -A POSTROUTING -s 192.168.1.0/24 -o eth0 -j MASQUERADE
 proxyarp    #客户端IP和内部网络在同一网段必须启用ARP代理
 ```
 
-![image-20200609223430968](http://hfzs.store:9000/myblog/img/image-20200609223430968.png)
+![image-20200609223430968](http://img.hfzs.store/myblog/img/image-20200609223430968.png)
 
 然后重启pptpd`service pptpd restart`然后就好了。参考**https://www.oschina.net/question/139033_84155**
 
