@@ -1,0 +1,2316 @@
+Microsoft Windows [版本 10.0.18363.720]
+(c) 2019 Microsoft Corporation。保留所有权利。
+
+C:\Windows\system32>cd E:\Project\thingsboard-1
+
+C:\Windows\system32>e:
+
+E:\Project\thingsboard-1>mvn clean install -DskipTests
+[WARNING]
+[WARNING] Some problems were encountered while building the effective settings
+[WARNING] expected START_TAG or END_TAG not TEXT (position: TEXT seen ...rl>http://maven.aliyun.com/nexus/content/groups/public/</url>\n\u3000\u3000</... @163:5)  @ E:\Program Files\Apache Software Foundation\apache-maven-3.6.2\bin\..\conf\settings.xml, line 163, column 5
+[WARNING]
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Detecting the operating system and CPU architecture
+[INFO] ------------------------------------------------------------------------
+[INFO] os.detected.name: windows
+[INFO] os.detected.arch: x86_64
+[INFO] os.detected.version: 10.0
+[INFO] os.detected.version.major: 10
+[INFO] os.detected.version.minor: 0
+[INFO] os.detected.classifier: windows-x86_64
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO]
+[INFO] Thingsboard                                                        [pom]
+[INFO] Netty MQTT Client                                                  [jar]
+[INFO] Thingsboard Server Commons                                         [pom]
+[INFO] Thingsboard Server Common Data                                     [jar]
+[INFO] Thingsboard Server Common Utils                                    [jar]
+[INFO] Thingsboard Server Common Messages                                 [jar]
+[INFO] Thingsboard Server Queue components                                [jar]
+[INFO] Thingsboard Server Commons                                         [pom]
+[INFO] Thingsboard Server Common Transport components                     [jar]
+[INFO] Thingsboard MQTT Transport Common                                  [jar]
+[INFO] Thingsboard HTTP Transport Common                                  [jar]
+[INFO] Thingsboard CoAP Transport Common                                  [jar]
+[INFO] Thingsboard Server Common DAO API                                  [jar]
+[INFO] Thingsboard Extensions                                             [pom]
+[INFO] Thingsboard Rule Engine API                                        [jar]
+[INFO] Thingsboard Server DAO Layer                                       [jar]
+[INFO] Thingsboard Rule Engine Components                                 [jar]
+[INFO] Thingsboard Server Transport Modules                               [pom]
+[INFO] Thingsboard HTTP Transport Service                                 [jar]
+[INFO] Thingsboard MQTT Transport Service                                 [jar]
+[INFO] Thingsboard CoAP Transport Service                                 [jar]
+[INFO] Thingsboard Server UI                                              [jar]
+[INFO] Thingsboard Server Tools                                           [jar]
+[INFO] ThingsBoard Server Application                                     [jar]
+[INFO] ThingsBoard Microservices                                          [pom]
+[INFO] ThingsBoard Docker Images                                          [pom]
+[INFO] ThingsBoard JavaScript Executor Microservice                       [pom]
+[INFO] ThingsBoard Web UI Microservice                                    [pom]
+[INFO] ThingsBoard Node Microservice                                      [pom]
+[INFO] ThingsBoard Transport Microservices                                [pom]
+[INFO] ThingsBoard MQTT Transport Microservice                            [pom]
+[INFO] ThingsBoard HTTP Transport Microservice                            [pom]
+[INFO] ThingsBoard COAP Transport Microservice                            [pom]
+[INFO] ThingsBoard Black Box Tests                                        [jar]
+[INFO]
+[INFO] --------------------< org.thingsboard:thingsboard >---------------------
+[INFO] Building Thingsboard 2.4.3                                        [1/34]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ thingsboard ---
+[INFO]
+[INFO] --- maven-install-plugin:3.0.0-M1:install (default-install) @ thingsboard ---
+[INFO] Installing E:\Project\thingsboard-1\pom.xml to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\thingsboard\2.4.3\thingsboard-2.4.3.pom
+[INFO]
+[INFO] ---------------------< org.thingsboard:netty-mqtt >---------------------
+[INFO] Building Netty MQTT Client 2.4.3                                  [2/34]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ netty-mqtt ---
+[INFO] Deleting E:\Project\thingsboard-1\netty-mqtt\target
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ netty-mqtt ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory E:\Project\thingsboard-1\netty-mqtt\src\main\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ netty-mqtt ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 16 source files to E:\Project\thingsboard-1\netty-mqtt\target\classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ netty-mqtt ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory E:\Project\thingsboard-1\netty-mqtt\src\test\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ netty-mqtt ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-surefire-plugin:3.0.0-M1:test (default-test) @ netty-mqtt ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ netty-mqtt ---
+[INFO] Building jar: E:\Project\thingsboard-1\netty-mqtt\target\netty-mqtt-2.4.3.jar
+[INFO]
+[INFO] --- maven-install-plugin:3.0.0-M1:install (default-install) @ netty-mqtt ---
+[INFO] Installing E:\Project\thingsboard-1\netty-mqtt\target\netty-mqtt-2.4.3.jar to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\netty-mqtt\2.4.3\netty-mqtt-2.4.3.jar
+[INFO] Installing E:\Project\thingsboard-1\netty-mqtt\pom.xml to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\netty-mqtt\2.4.3\netty-mqtt-2.4.3.pom
+[INFO]
+[INFO] -----------------------< org.thingsboard:common >-----------------------
+[INFO] Building Thingsboard Server Commons 2.4.3                         [3/34]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ common ---
+[INFO]
+[INFO] --- maven-install-plugin:3.0.0-M1:install (default-install) @ common ---
+[INFO] Installing E:\Project\thingsboard-1\common\pom.xml to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\common\2.4.3\common-2.4.3.pom
+[INFO]
+[INFO] --------------------< org.thingsboard.common:data >---------------------
+[INFO] Building Thingsboard Server Common Data 2.4.3                     [4/34]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ data ---
+[INFO] Deleting E:\Project\thingsboard-1\common\data\target
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ data ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory E:\Project\thingsboard-1\common\data\src\main\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ data ---
+[INFO] Compiling 125 source files to E:\Project\thingsboard-1\common\data\target\classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ data ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory E:\Project\thingsboard-1\common\data\src\test\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ data ---
+[INFO] Compiling 1 source file to E:\Project\thingsboard-1\common\data\target\test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:3.0.0-M1:test (default-test) @ data ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ data ---
+[INFO] Building jar: E:\Project\thingsboard-1\common\data\target\data-2.4.3.jar
+[INFO]
+[INFO] --- maven-install-plugin:3.0.0-M1:install (default-install) @ data ---
+[INFO] Installing E:\Project\thingsboard-1\common\data\target\data-2.4.3.jar to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\common\data\2.4.3\data-2.4.3.jar
+[INFO] Installing E:\Project\thingsboard-1\common\data\pom.xml to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\common\data\2.4.3\data-2.4.3.pom
+[INFO]
+[INFO] --------------------< org.thingsboard.common:util >---------------------
+[INFO] Building Thingsboard Server Common Utils 2.4.3                    [5/34]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ util ---
+[INFO] Deleting E:\Project\thingsboard-1\common\util\target
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ util ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory E:\Project\thingsboard-1\common\util\src\main\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ util ---
+[INFO] Compiling 4 source files to E:\Project\thingsboard-1\common\util\target\classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ util ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory E:\Project\thingsboard-1\common\util\src\test\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ util ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-surefire-plugin:3.0.0-M1:test (default-test) @ util ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ util ---
+[INFO] Building jar: E:\Project\thingsboard-1\common\util\target\util-2.4.3.jar
+[INFO]
+[INFO] --- maven-install-plugin:3.0.0-M1:install (default-install) @ util ---
+[INFO] Installing E:\Project\thingsboard-1\common\util\target\util-2.4.3.jar to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\common\util\2.4.3\util-2.4.3.jar
+[INFO] Installing E:\Project\thingsboard-1\common\util\pom.xml to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\common\util\2.4.3\util-2.4.3.pom
+[INFO]
+[INFO] -------------------< org.thingsboard.common:message >-------------------
+[INFO] Building Thingsboard Server Common Messages 2.4.3                 [6/34]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ message ---
+[INFO] Deleting E:\Project\thingsboard-1\common\message\target
+[INFO]
+[INFO] --- protobuf-maven-plugin:0.5.0:compile (default) @ message ---
+[INFO] Compiling 1 proto file(s) to E:\Project\thingsboard-1\common\message\target\generated-sources\protobuf\java
+[INFO]
+[INFO] --- protobuf-maven-plugin:0.5.0:compile-custom (default) @ message ---
+[INFO] Compiling 1 proto file(s) to E:\Project\thingsboard-1\common\message\target\generated-sources\protobuf\grpc-java
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ message ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory E:\Project\thingsboard-1\common\message\src\main\resources
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ message ---
+[INFO] Compiling 35 source files to E:\Project\thingsboard-1\common\message\target\classes
+[INFO]
+[INFO] --- protobuf-maven-plugin:0.5.0:test-compile (default) @ message ---
+[INFO] E:\Project\thingsboard-1\common\message\src\test\proto does not exist. Review the configuration or consider disabling the plugin.
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ message ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory E:\Project\thingsboard-1\common\message\src\test\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ message ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-surefire-plugin:3.0.0-M1:test (default-test) @ message ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ message ---
+[INFO] Building jar: E:\Project\thingsboard-1\common\message\target\message-2.4.3.jar
+[INFO]
+[INFO] --- maven-install-plugin:3.0.0-M1:install (default-install) @ message ---
+[INFO] Installing E:\Project\thingsboard-1\common\message\target\message-2.4.3.jar to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\common\message\2.4.3\message-2.4.3.jar
+[INFO] Installing E:\Project\thingsboard-1\common\message\pom.xml to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\common\message\2.4.3\message-2.4.3.pom
+[INFO]
+[INFO] --------------------< org.thingsboard.common:queue >--------------------
+[INFO] Building Thingsboard Server Queue components 2.4.3                [7/34]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ queue ---
+[INFO] Deleting E:\Project\thingsboard-1\common\queue\target
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ queue ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory E:\Project\thingsboard-1\common\queue\src\main\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ queue ---
+[INFO] Compiling 15 source files to E:\Project\thingsboard-1\common\queue\target\classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ queue ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory E:\Project\thingsboard-1\common\queue\src\test\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ queue ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-surefire-plugin:3.0.0-M1:test (default-test) @ queue ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ queue ---
+[INFO] Building jar: E:\Project\thingsboard-1\common\queue\target\queue-2.4.3.jar
+[INFO]
+[INFO] --- maven-install-plugin:3.0.0-M1:install (default-install) @ queue ---
+[INFO] Installing E:\Project\thingsboard-1\common\queue\target\queue-2.4.3.jar to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\common\queue\2.4.3\queue-2.4.3.jar
+[INFO] Installing E:\Project\thingsboard-1\common\queue\pom.xml to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\common\queue\2.4.3\queue-2.4.3.pom
+[INFO]
+[INFO] ------------------< org.thingsboard.common:transport >------------------
+[INFO] Building Thingsboard Server Commons 2.4.3                         [8/34]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ transport ---
+[INFO]
+[INFO] --- maven-install-plugin:3.0.0-M1:install (default-install) @ transport ---
+[INFO] Installing E:\Project\thingsboard-1\common\transport\pom.xml to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\common\transport\2.4.3\transport-2.4.3.pom
+[INFO]
+[INFO] -----------< org.thingsboard.common.transport:transport-api >-----------
+[INFO] Building Thingsboard Server Common Transport components 2.4.3     [9/34]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ transport-api ---
+[INFO] Deleting E:\Project\thingsboard-1\common\transport\transport-api\target
+[INFO]
+[INFO] --- protobuf-maven-plugin:0.5.0:compile (default) @ transport-api ---
+[INFO] Compiling 1 proto file(s) to E:\Project\thingsboard-1\common\transport\transport-api\target\generated-sources\protobuf\java
+[INFO]
+[INFO] --- protobuf-maven-plugin:0.5.0:compile-custom (default) @ transport-api ---
+[INFO] Compiling 1 proto file(s) to E:\Project\thingsboard-1\common\transport\transport-api\target\generated-sources\protobuf\grpc-java
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ transport-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory E:\Project\thingsboard-1\common\transport\transport-api\src\main\resources
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ transport-api ---
+[INFO] Compiling 20 source files to E:\Project\thingsboard-1\common\transport\transport-api\target\classes
+[INFO]
+[INFO] --- protobuf-maven-plugin:0.5.0:test-compile (default) @ transport-api ---
+[INFO] E:\Project\thingsboard-1\common\transport\transport-api\src\test\proto does not exist. Review the configuration or consider disabling the plugin.
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ transport-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory E:\Project\thingsboard-1\common\transport\transport-api\src\test\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ transport-api ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-surefire-plugin:3.0.0-M1:test (default-test) @ transport-api ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ transport-api ---
+[INFO] Building jar: E:\Project\thingsboard-1\common\transport\transport-api\target\transport-api-2.4.3.jar
+[INFO]
+[INFO] --- maven-install-plugin:3.0.0-M1:install (default-install) @ transport-api ---
+[INFO] Installing E:\Project\thingsboard-1\common\transport\transport-api\target\transport-api-2.4.3.jar to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\common\transport\transport-api\2.4.3\transport-api-2.4.3.jar
+[INFO] Installing E:\Project\thingsboard-1\common\transport\transport-api\pom.xml to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\common\transport\transport-api\2.4.3\transport-api-2.4.3.pom
+[INFO]
+[INFO] ---------------< org.thingsboard.common.transport:mqtt >----------------
+[INFO] Building Thingsboard MQTT Transport Common 2.4.3                 [10/34]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ mqtt ---
+[INFO] Deleting E:\Project\thingsboard-1\common\transport\mqtt\target
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ mqtt ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory E:\Project\thingsboard-1\common\transport\mqtt\src\main\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ mqtt ---
+[INFO] Compiling 14 source files to E:\Project\thingsboard-1\common\transport\mqtt\target\classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ mqtt ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory E:\Project\thingsboard-1\common\transport\mqtt\src\test\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ mqtt ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-surefire-plugin:3.0.0-M1:test (default-test) @ mqtt ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ mqtt ---
+[INFO] Building jar: E:\Project\thingsboard-1\common\transport\mqtt\target\mqtt-2.4.3.jar
+[INFO]
+[INFO] --- maven-install-plugin:3.0.0-M1:install (default-install) @ mqtt ---
+[INFO] Installing E:\Project\thingsboard-1\common\transport\mqtt\target\mqtt-2.4.3.jar to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\common\transport\mqtt\2.4.3\mqtt-2.4.3.jar
+[INFO] Installing E:\Project\thingsboard-1\common\transport\mqtt\pom.xml to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\common\transport\mqtt\2.4.3\mqtt-2.4.3.pom
+[INFO]
+[INFO] ---------------< org.thingsboard.common.transport:http >----------------
+[INFO] Building Thingsboard HTTP Transport Common 2.4.3                 [11/34]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ http ---
+[INFO] Deleting E:\Project\thingsboard-1\common\transport\http\target
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ http ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory E:\Project\thingsboard-1\common\transport\http\src\main\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ http ---
+[INFO] Compiling 2 source files to E:\Project\thingsboard-1\common\transport\http\target\classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ http ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory E:\Project\thingsboard-1\common\transport\http\src\test\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ http ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-surefire-plugin:3.0.0-M1:test (default-test) @ http ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ http ---
+[INFO] Building jar: E:\Project\thingsboard-1\common\transport\http\target\http-2.4.3.jar
+[INFO]
+[INFO] --- maven-install-plugin:3.0.0-M1:install (default-install) @ http ---
+[INFO] Installing E:\Project\thingsboard-1\common\transport\http\target\http-2.4.3.jar to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\common\transport\http\2.4.3\http-2.4.3.jar
+[INFO] Installing E:\Project\thingsboard-1\common\transport\http\pom.xml to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\common\transport\http\2.4.3\http-2.4.3.pom
+[INFO]
+[INFO] ---------------< org.thingsboard.common.transport:coap >----------------
+[INFO] Building Thingsboard CoAP Transport Common 2.4.3                 [12/34]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ coap ---
+[INFO] Deleting E:\Project\thingsboard-1\common\transport\coap\target
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ coap ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory E:\Project\thingsboard-1\common\transport\coap\src\main\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ coap ---
+[INFO] Compiling 6 source files to E:\Project\thingsboard-1\common\transport\coap\target\classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ coap ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory E:\Project\thingsboard-1\common\transport\coap\src\test\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ coap ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-surefire-plugin:3.0.0-M1:test (default-test) @ coap ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ coap ---
+[INFO] Building jar: E:\Project\thingsboard-1\common\transport\coap\target\coap-2.4.3.jar
+[INFO]
+[INFO] --- maven-install-plugin:3.0.0-M1:install (default-install) @ coap ---
+[INFO] Installing E:\Project\thingsboard-1\common\transport\coap\target\coap-2.4.3.jar to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\common\transport\coap\2.4.3\coap-2.4.3.jar
+[INFO] Installing E:\Project\thingsboard-1\common\transport\coap\pom.xml to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\common\transport\coap\2.4.3\coap-2.4.3.pom
+[INFO]
+[INFO] -------------------< org.thingsboard.common:dao-api >-------------------
+[INFO] Building Thingsboard Server Common DAO API 2.4.3                 [13/34]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ dao-api ---
+[INFO] Deleting E:\Project\thingsboard-1\common\dao-api\target
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ dao-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory E:\Project\thingsboard-1\common\dao-api\src\main\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ dao-api ---
+[INFO] Compiling 38 source files to E:\Project\thingsboard-1\common\dao-api\target\classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ dao-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory E:\Project\thingsboard-1\common\dao-api\src\test\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ dao-api ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-surefire-plugin:3.0.0-M1:test (default-test) @ dao-api ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ dao-api ---
+[INFO] Building jar: E:\Project\thingsboard-1\common\dao-api\target\dao-api-2.4.3.jar
+[INFO]
+[INFO] --- maven-install-plugin:3.0.0-M1:install (default-install) @ dao-api ---
+[INFO] Installing E:\Project\thingsboard-1\common\dao-api\target\dao-api-2.4.3.jar to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\common\dao-api\2.4.3\dao-api-2.4.3.jar
+[INFO] Installing E:\Project\thingsboard-1\common\dao-api\pom.xml to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\common\dao-api\2.4.3\dao-api-2.4.3.pom
+[INFO]
+[INFO] --------------------< org.thingsboard:rule-engine >---------------------
+[INFO] Building Thingsboard Extensions 2.4.3                            [14/34]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ rule-engine ---
+[INFO]
+[INFO] --- maven-install-plugin:3.0.0-M1:install (default-install) @ rule-engine ---
+[INFO] Installing E:\Project\thingsboard-1\rule-engine\pom.xml to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\rule-engine\2.4.3\rule-engine-2.4.3.pom
+[INFO]
+[INFO] ------------< org.thingsboard.rule-engine:rule-engine-api >-------------
+[INFO] Building Thingsboard Rule Engine API 2.4.3                       [15/34]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ rule-engine-api ---
+[INFO] Deleting E:\Project\thingsboard-1\rule-engine\rule-engine-api\target
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ rule-engine-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory E:\Project\thingsboard-1\rule-engine\rule-engine-api\src\main\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ rule-engine-api ---
+[INFO] Compiling 25 source files to E:\Project\thingsboard-1\rule-engine\rule-engine-api\target\classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ rule-engine-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory E:\Project\thingsboard-1\rule-engine\rule-engine-api\src\test\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ rule-engine-api ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-surefire-plugin:3.0.0-M1:test (default-test) @ rule-engine-api ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ rule-engine-api ---
+[INFO] Building jar: E:\Project\thingsboard-1\rule-engine\rule-engine-api\target\rule-engine-api-2.4.3.jar
+[INFO]
+[INFO] --- maven-install-plugin:3.0.0-M1:install (default-install) @ rule-engine-api ---
+[INFO] Installing E:\Project\thingsboard-1\rule-engine\rule-engine-api\target\rule-engine-api-2.4.3.jar to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\rule-engine\rule-engine-api\2.4.3\rule-engine-api-2.4.3.jar
+[INFO] Installing E:\Project\thingsboard-1\rule-engine\rule-engine-api\pom.xml to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\rule-engine\rule-engine-api\2.4.3\rule-engine-api-2.4.3.pom
+[INFO]
+[INFO] ------------------------< org.thingsboard:dao >-------------------------
+[INFO] Building Thingsboard Server DAO Layer 2.4.3                      [16/34]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ dao ---
+[INFO] Deleting E:\Project\thingsboard-1\dao\target
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ dao ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 9 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ dao ---
+[INFO] Compiling 266 source files to E:\Project\thingsboard-1\dao\target\classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ dao ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 20 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ dao ---
+[INFO] Compiling 79 source files to E:\Project\thingsboard-1\dao\target\test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ dao ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ dao ---
+[INFO] Building jar: E:\Project\thingsboard-1\dao\target\dao-2.4.3.jar
+[INFO]
+[INFO] --- maven-jar-plugin:3.0.2:test-jar (default) @ dao ---
+[INFO] Building jar: E:\Project\thingsboard-1\dao\target\dao-2.4.3-tests.jar
+[INFO]
+[INFO] --- maven-install-plugin:3.0.0-M1:install (default-install) @ dao ---
+[INFO] Installing E:\Project\thingsboard-1\dao\target\dao-2.4.3.jar to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\dao\2.4.3\dao-2.4.3.jar
+[INFO] Installing E:\Project\thingsboard-1\dao\pom.xml to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\dao\2.4.3\dao-2.4.3.pom
+[INFO] Installing E:\Project\thingsboard-1\dao\target\dao-2.4.3-tests.jar to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\dao\2.4.3\dao-2.4.3-tests.jar
+[INFO]
+[INFO] ---------< org.thingsboard.rule-engine:rule-engine-components >---------
+[INFO] Building Thingsboard Rule Engine Components 2.4.3                [17/34]
+[INFO] --------------------------------[ jar ]---------------------------------
+Downloading from nexus: http://maven.aliyun.com/nexus/content/groups/public/io/grpc/grpc-core/maven-metadata.xml
+Downloaded from nexus: http://maven.aliyun.com/nexus/content/groups/public/io/grpc/grpc-core/maven-metadata.xml (2.5 kB at 741 B/s)
+Downloading from nexus: http://maven.aliyun.com/nexus/content/groups/public/com/google/errorprone/error_prone_annotations/maven-metadata.xml
+Downloaded from nexus: http://maven.aliyun.com/nexus/content/groups/public/com/google/errorprone/error_prone_annotations/maven-metadata.xml (1.3 kB at 622 B/s)
+Downloading from nexus: http://maven.aliyun.com/nexus/content/groups/public/io/grpc/grpc-netty-shaded/maven-metadata.xml
+Downloaded from nexus: http://maven.aliyun.com/nexus/content/groups/public/io/grpc/grpc-netty-shaded/maven-metadata.xml (1.5 kB at 819 B/s)
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ rule-engine-components ---
+[INFO] Deleting E:\Project\thingsboard-1\rule-engine\rule-engine-components\target
+[INFO]
+[INFO] --- maven-dependency-plugin:2.8:copy (copy-protoc) @ rule-engine-components ---
+[INFO] Configured Artifact: com.google.protobuf:protoc:windows-x86_64:3.6.1:exe
+[INFO] Copying protoc-3.6.1-windows-x86_64.exe to E:\Project\thingsboard-1\rule-engine\rule-engine-components\target\protoc-3.6.1-windows-x86_64.exe
+[INFO]
+[INFO] --- build-helper-maven-plugin:1.12:add-source (add-source) @ rule-engine-components ---
+[INFO] Source directory: E:\Project\thingsboard-1\rule-engine\rule-engine-components\target\generated-sources added.
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ rule-engine-components ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ rule-engine-components ---
+[INFO] Compiling 127 source files to E:\Project\thingsboard-1\rule-engine\rule-engine-components\target\classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ rule-engine-components ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory E:\Project\thingsboard-1\rule-engine\rule-engine-components\src\test\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ rule-engine-components ---
+[INFO] Compiling 7 source files to E:\Project\thingsboard-1\rule-engine\rule-engine-components\target\test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:3.0.0-M1:test (default-test) @ rule-engine-components ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ rule-engine-components ---
+[INFO] Building jar: E:\Project\thingsboard-1\rule-engine\rule-engine-components\target\rule-engine-components-2.4.3.jar
+[INFO]
+[INFO] --- spring-boot-maven-plugin:2.1.3.RELEASE:repackage (default) @ rule-engine-components ---
+[INFO] Layout: ZIP
+[INFO] Attaching repackaged archive E:\Project\thingsboard-1\rule-engine\rule-engine-components\target\rule-engine-components-2.4.3-boot.jar with classifier boot
+[INFO]
+[INFO] --- maven-install-plugin:3.0.0-M1:install (default-install) @ rule-engine-components ---
+[INFO] Installing E:\Project\thingsboard-1\rule-engine\rule-engine-components\target\rule-engine-components-2.4.3.jar to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\rule-engine\rule-engine-components\2.4.3\rule-engine-components-2.4.3.jar
+[INFO] Installing E:\Project\thingsboard-1\rule-engine\rule-engine-components\pom.xml to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\rule-engine\rule-engine-components\2.4.3\rule-engine-components-2.4.3.pom
+[INFO] Installing E:\Project\thingsboard-1\rule-engine\rule-engine-components\target\rule-engine-components-2.4.3-boot.jar to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\rule-engine\rule-engine-components\2.4.3\rule-engine-components-2.4.3-boot.jar
+[INFO]
+[INFO] ---------------------< org.thingsboard:transport >----------------------
+[INFO] Building Thingsboard Server Transport Modules 2.4.3              [18/34]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ transport ---
+[INFO]
+[INFO] --- maven-install-plugin:3.0.0-M1:install (default-install) @ transport ---
+[INFO] Installing E:\Project\thingsboard-1\transport\pom.xml to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\transport\2.4.3\transport-2.4.3.pom
+[INFO]
+[INFO] -------------------< org.thingsboard.transport:http >-------------------
+[INFO] Building Thingsboard HTTP Transport Service 2.4.3                [19/34]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ http ---
+[INFO] Deleting E:\Project\thingsboard-1\transport\http\target
+[INFO]
+[INFO] --- maven-dependency-plugin:2.8:copy (copy-protoc) @ http ---
+[INFO] Configured Artifact: com.google.protobuf:protoc:windows-x86_64:3.6.1:exe
+[INFO] Copying protoc-3.6.1-windows-x86_64.exe to E:\Project\thingsboard-1\transport\http\target\protoc-3.6.1-windows-x86_64.exe
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ http ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-conf) @ http ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-service-conf) @ http ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-win-conf) @ http ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-control) @ http ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 9 resources
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-windows-control) @ http ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ http ---
+[INFO] Compiling 1 source file to E:\Project\thingsboard-1\transport\http\target\classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ http ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory E:\Project\thingsboard-1\transport\http\src\test\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ http ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-surefire-plugin:3.0.0-M1:test (default-test) @ http ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ http ---
+[INFO] Building jar: E:\Project\thingsboard-1\transport\http\target\tb-http-transport-2.4.3.jar
+[INFO]
+[INFO] --- maven-dependency-plugin:2.8:copy (copy-winsw-service) @ http ---
+[INFO] Configured Artifact: com.sun.winsw:winsw:bin:?:exe
+[INFO] Copying winsw-2.0.1-bin.exe to E:\Project\thingsboard-1\transport\http\target\windows\service.exe
+[INFO]
+[INFO] --- spring-boot-maven-plugin:2.1.3.RELEASE:repackage (default) @ http ---
+[INFO] Layout: ZIP
+[INFO] Attaching repackaged archive E:\Project\thingsboard-1\transport\http\target\tb-http-transport-2.4.3-boot.jar with classifier boot
+[INFO]
+[INFO] --- gradle-maven-plugin:1.0.8:invoke (default) @ http ---
+[INFO] jvmArgs: [Ljava.lang.String;@63b5a78f
+[INFO] gradleProjectDirectory: E:\Project\thingsboard-1\transport\http
+[INFO] Build
+[INFO] Validate distribution
+[INFO] Build
+[INFO] Validate distribution
+[INFO] Build
+[INFO] Initialize build
+[INFO] Configure settings
+[INFO] Initialize build
+[INFO] Configure projects
+[INFO] Configure project :
+[INFO] Resolve dependencies ':classpath'
+[INFO] Configure project :
+[INFO] Configure projects
+[INFO] Initialize build
+[INFO] Build
+[INFO] Execute tasks
+:assemble[INFO] Execute :assemble
+ UP-TO-DATE
+[INFO] Execute tasks
+:check[INFO] Execute :check
+ UP-TO-DATE
+[INFO] Execute tasks
+:build[INFO] Execute :build
+ UP-TO-DATE
+[INFO] Execute tasks
+:buildDeb[INFO] Execute :buildDeb
+
+[INFO] Execute tasks
+:buildRpm[INFO] Execute :buildRpm
+
+[INFO] Execute tasks
+
+BUILD SUCCESSFUL
+
+Total time: 25.962 secs
+[INFO] Build
+[INFO]
+[INFO] gradle execution complete
+[INFO]
+[INFO] --- maven-assembly-plugin:3.0.0:single (assembly) @ http ---
+[INFO] Reading assembly descriptor: src/main/assembly/windows.xml
+[INFO] Building zip: E:\Project\thingsboard-1\transport\http\target\tb-http-transport-windows.zip
+[INFO]
+[INFO] --- maven-install-plugin:3.0.0-M1:install-file (install-deb) @ http ---
+[INFO] Installing E:\Project\thingsboard-1\transport\http\target\tb-http-transport.deb to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\transport\http\2.4.3\http-2.4.3-deb.deb
+[INFO]
+[INFO] --- maven-install-plugin:3.0.0-M1:install (default-install) @ http ---
+[INFO] Installing E:\Project\thingsboard-1\transport\http\target\tb-http-transport-2.4.3.jar to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\transport\http\2.4.3\http-2.4.3.jar
+[INFO] Installing E:\Project\thingsboard-1\transport\http\pom.xml to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\transport\http\2.4.3\http-2.4.3.pom
+[INFO] Installing E:\Project\thingsboard-1\transport\http\target\tb-http-transport-2.4.3-boot.jar to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\transport\http\2.4.3\http-2.4.3-boot.jar
+[INFO] Installing E:\Project\thingsboard-1\transport\http\target\tb-http-transport-windows.zip to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\transport\http\2.4.3\http-2.4.3-windows.zip
+[INFO]
+[INFO] -------------------< org.thingsboard.transport:mqtt >-------------------
+[INFO] Building Thingsboard MQTT Transport Service 2.4.3                [20/34]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ mqtt ---
+[INFO] Deleting E:\Project\thingsboard-1\transport\mqtt\target
+[INFO]
+[INFO] --- maven-dependency-plugin:2.8:copy (copy-protoc) @ mqtt ---
+[INFO] Configured Artifact: com.google.protobuf:protoc:windows-x86_64:3.6.1:exe
+[INFO] Copying protoc-3.6.1-windows-x86_64.exe to E:\Project\thingsboard-1\transport\mqtt\target\protoc-3.6.1-windows-x86_64.exe
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ mqtt ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-conf) @ mqtt ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-service-conf) @ mqtt ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-win-conf) @ mqtt ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-control) @ mqtt ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 9 resources
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-windows-control) @ mqtt ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ mqtt ---
+[INFO] Compiling 1 source file to E:\Project\thingsboard-1\transport\mqtt\target\classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ mqtt ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory E:\Project\thingsboard-1\transport\mqtt\src\test\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ mqtt ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-surefire-plugin:3.0.0-M1:test (default-test) @ mqtt ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ mqtt ---
+[INFO] Building jar: E:\Project\thingsboard-1\transport\mqtt\target\tb-mqtt-transport-2.4.3.jar
+[INFO]
+[INFO] --- maven-dependency-plugin:2.8:copy (copy-winsw-service) @ mqtt ---
+[INFO] Configured Artifact: com.sun.winsw:winsw:bin:?:exe
+[INFO] Copying winsw-2.0.1-bin.exe to E:\Project\thingsboard-1\transport\mqtt\target\windows\service.exe
+[INFO]
+[INFO] --- spring-boot-maven-plugin:2.1.3.RELEASE:repackage (default) @ mqtt ---
+[INFO] Layout: ZIP
+[INFO] Attaching repackaged archive E:\Project\thingsboard-1\transport\mqtt\target\tb-mqtt-transport-2.4.3-boot.jar with classifier boot
+[INFO]
+[INFO] --- gradle-maven-plugin:1.0.8:invoke (default) @ mqtt ---
+[INFO] jvmArgs: [Ljava.lang.String;@405d18d5
+[INFO] gradleProjectDirectory: E:\Project\thingsboard-1\transport\mqtt
+[INFO] Build
+[INFO] Validate distribution
+[INFO] Build
+[INFO] Initialize build
+[INFO] Configure settings
+[INFO] Initialize build
+[INFO] Configure projects
+[INFO] Configure project :
+[INFO] Resolve dependencies ':classpath'
+[INFO] Configure project :
+[INFO] Configure projects
+[INFO] Initialize build
+[INFO] Build
+[INFO] Execute tasks
+:assemble[INFO] Execute :assemble
+ UP-TO-DATE
+[INFO] Execute tasks
+:check[INFO] Execute :check
+ UP-TO-DATE
+[INFO] Execute tasks
+:build[INFO] Execute :build
+ UP-TO-DATE
+[INFO] Execute tasks
+:buildDeb[INFO] Execute :buildDeb
+
+[INFO] Execute tasks
+:buildRpm[INFO] Execute :buildRpm
+
+[INFO] Execute tasks
+
+BUILD SUCCESSFUL
+
+Total time: 6.2 secs
+[INFO] Build
+[INFO]
+[INFO] gradle execution complete
+[INFO]
+[INFO] --- maven-assembly-plugin:3.0.0:single (assembly) @ mqtt ---
+[INFO] Reading assembly descriptor: src/main/assembly/windows.xml
+[INFO] Building zip: E:\Project\thingsboard-1\transport\mqtt\target\tb-mqtt-transport-windows.zip
+[INFO]
+[INFO] --- maven-install-plugin:3.0.0-M1:install-file (install-deb) @ mqtt ---
+[INFO] Installing E:\Project\thingsboard-1\transport\mqtt\target\tb-mqtt-transport.deb to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\transport\mqtt\2.4.3\mqtt-2.4.3-deb.deb
+[INFO]
+[INFO] --- maven-install-plugin:3.0.0-M1:install (default-install) @ mqtt ---
+[INFO] Installing E:\Project\thingsboard-1\transport\mqtt\target\tb-mqtt-transport-2.4.3.jar to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\transport\mqtt\2.4.3\mqtt-2.4.3.jar
+[INFO] Installing E:\Project\thingsboard-1\transport\mqtt\pom.xml to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\transport\mqtt\2.4.3\mqtt-2.4.3.pom
+[INFO] Installing E:\Project\thingsboard-1\transport\mqtt\target\tb-mqtt-transport-2.4.3-boot.jar to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\transport\mqtt\2.4.3\mqtt-2.4.3-boot.jar
+[INFO] Installing E:\Project\thingsboard-1\transport\mqtt\target\tb-mqtt-transport-windows.zip to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\transport\mqtt\2.4.3\mqtt-2.4.3-windows.zip
+[INFO]
+[INFO] -------------------< org.thingsboard.transport:coap >-------------------
+[INFO] Building Thingsboard CoAP Transport Service 2.4.3                [21/34]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ coap ---
+[INFO] Deleting E:\Project\thingsboard-1\transport\coap\target
+[INFO]
+[INFO] --- maven-dependency-plugin:2.8:copy (copy-protoc) @ coap ---
+[INFO] Configured Artifact: com.google.protobuf:protoc:windows-x86_64:3.6.1:exe
+[INFO] Copying protoc-3.6.1-windows-x86_64.exe to E:\Project\thingsboard-1\transport\coap\target\protoc-3.6.1-windows-x86_64.exe
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ coap ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-conf) @ coap ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-service-conf) @ coap ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-win-conf) @ coap ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-control) @ coap ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 9 resources
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-windows-control) @ coap ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ coap ---
+[INFO] Compiling 1 source file to E:\Project\thingsboard-1\transport\coap\target\classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ coap ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory E:\Project\thingsboard-1\transport\coap\src\test\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ coap ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-surefire-plugin:3.0.0-M1:test (default-test) @ coap ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ coap ---
+[INFO] Building jar: E:\Project\thingsboard-1\transport\coap\target\tb-coap-transport-2.4.3.jar
+[INFO]
+[INFO] --- maven-dependency-plugin:2.8:copy (copy-winsw-service) @ coap ---
+[INFO] Configured Artifact: com.sun.winsw:winsw:bin:?:exe
+[INFO] Copying winsw-2.0.1-bin.exe to E:\Project\thingsboard-1\transport\coap\target\windows\service.exe
+[INFO]
+[INFO] --- spring-boot-maven-plugin:2.1.3.RELEASE:repackage (default) @ coap ---
+[INFO] Layout: ZIP
+[INFO] Attaching repackaged archive E:\Project\thingsboard-1\transport\coap\target\tb-coap-transport-2.4.3-boot.jar with classifier boot
+[INFO]
+[INFO] --- gradle-maven-plugin:1.0.8:invoke (default) @ coap ---
+[INFO] jvmArgs: [Ljava.lang.String;@342fc5aa
+[INFO] gradleProjectDirectory: E:\Project\thingsboard-1\transport\coap
+[INFO] Build
+[INFO] Validate distribution
+[INFO] Build
+[INFO] Initialize build
+[INFO] Configure settings
+[INFO] Initialize build
+[INFO] Configure projects
+[INFO] Configure project :
+[INFO] Resolve dependencies ':classpath'
+[INFO] Configure project :
+[INFO] Configure projects
+[INFO] Initialize build
+[INFO] Build
+[INFO] Execute tasks
+:assemble[INFO] Execute :assemble
+ UP-TO-DATE
+[INFO] Execute tasks
+:check[INFO] Execute :check
+ UP-TO-DATE
+[INFO] Execute tasks
+:build[INFO] Execute :build
+ UP-TO-DATE
+[INFO] Execute tasks
+:buildDeb[INFO] Execute :buildDeb
+
+[INFO] Execute tasks
+:buildRpm[INFO] Execute :buildRpm
+
+[INFO] Execute tasks
+
+BUILD SUCCESSFUL
+
+Total time: 5.8 secs
+[INFO] Build
+[INFO]
+[INFO] gradle execution complete
+[INFO]
+[INFO] --- maven-assembly-plugin:3.0.0:single (assembly) @ coap ---
+[INFO] Reading assembly descriptor: src/main/assembly/windows.xml
+[INFO] Building zip: E:\Project\thingsboard-1\transport\coap\target\tb-coap-transport-windows.zip
+[INFO]
+[INFO] --- maven-install-plugin:3.0.0-M1:install-file (install-deb) @ coap ---
+[INFO] Installing E:\Project\thingsboard-1\transport\coap\target\tb-coap-transport.deb to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\transport\coap\2.4.3\coap-2.4.3-deb.deb
+[INFO]
+[INFO] --- maven-install-plugin:3.0.0-M1:install (default-install) @ coap ---
+[INFO] Installing E:\Project\thingsboard-1\transport\coap\target\tb-coap-transport-2.4.3.jar to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\transport\coap\2.4.3\coap-2.4.3.jar
+[INFO] Installing E:\Project\thingsboard-1\transport\coap\pom.xml to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\transport\coap\2.4.3\coap-2.4.3.pom
+[INFO] Installing E:\Project\thingsboard-1\transport\coap\target\tb-coap-transport-2.4.3-boot.jar to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\transport\coap\2.4.3\coap-2.4.3-boot.jar
+[INFO] Installing E:\Project\thingsboard-1\transport\coap\target\tb-coap-transport-windows.zip to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\transport\coap\2.4.3\coap-2.4.3-windows.zip
+[INFO]
+[INFO] -------------------------< org.thingsboard:ui >-------------------------
+[INFO] Building Thingsboard Server UI 2.4.3                             [22/34]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ ui ---
+[INFO] Deleting E:\Project\thingsboard-1\ui\target
+[INFO]
+[INFO] --- frontend-maven-plugin:1.0:install-node-and-npm (install node and npm) @ ui ---
+[INFO] Installing node version v12.16.1
+[INFO] Copying node binary from E:\Program Files\Apache Software Foundation\repository\com\github\eirslett\node\12.16.1\node-12.16.1-windows-x64.exe to E:\Project\thingsboard-1\ui\target\node\node.exe
+[INFO] Installed node locally.
+[INFO] Installing npm version 6.13.4
+[INFO] Unpacking E:\Program Files\Apache Software Foundation\repository\com\github\eirslett\npm\6.13.4\npm-6.13.4.tar.gz into E:\Project\thingsboard-1\ui\target\node\node_modules
+[INFO] Installed npm locally.
+[INFO]
+[INFO] --- frontend-maven-plugin:1.0:npm (npm install) @ ui ---
+[INFO] Running 'npm install' in E:\Project\thingsboard-1\ui
+[WARNING] npm WARN leaflet.markercluster@1.4.1 requires a peer of leaflet@~1.3.1 but none is installed. You must install peer dependencies yourself.
+[INFO] up to date in 94.58s
+[WARNING] npm WARN material-ui-number-input@5.0.24 requires a peer of material-ui@^0.18.6 but none is installed. You must install peer dependencies yourself.
+[WARNING] npm WARN react-schema-form@0.3.11 requires a peer of material-ui@^0.18.7 but none is installed. You must install peer dependencies yourself.
+[WARNING] npm WARN stylelint-order@3.0.1 requires a peer of stylelint@^10.0.1 but none is installed. You must install peer dependencies yourself.
+[WARNING] npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules\fsevents):
+[WARNING] npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+[ERROR]
+[INFO]
+[INFO] --- frontend-maven-plugin:1.0:npm (npm build) @ ui ---
+[INFO] Running 'npm run build' in E:\Project\thingsboard-1\ui
+[INFO]
+[INFO] > thingsboard@2.4.3 build E:\Project\thingsboard-1\ui
+[INFO] > cross-env NODE_OPTIONS=--max_old_space_size=4096 NODE_ENV=production webpack
+[INFO]
+[ERROR] The rule `angular/service-name` will be split up to different rules in the next version. Please read the docs for more information
+[INFO] Hash: 337a9afab3dae54302da
+[INFO] Version: webpack 4.37.0
+[INFO] Time: 120758ms
+[INFO] Built at: 2020-04-06 16:51:33
+[INFO]                                   Asset      Size  Chunks                    Chunk Names
+[INFO]                           ../index.html  1.33 KiB          [emitted]
+[INFO]   012cf6a10129e2275d79d6adac7f3b02.woff  56.3 KiB          [emitted]
+[INFO]    084d5c434250ba4b6aaa634908eb4b15.svg  52.5 KiB          [emitted]
+[INFO] 084d5c434250ba4b6aaa634908eb4b15.svg.gz  18.3 KiB          [emitted]
+[INFO]  0d7e71f2b5cc1ddab837f72e1fe52f3f.woff2  14.2 KiB          [emitted]
+[INFO]    128879da78c6c8eb4e2c07fa3732cea7.eot  15.8 KiB          [emitted]
+[INFO]    13fb9544bc459a2351bbcf844f5763d8.svg  52.8 KiB          [emitted]
+[INFO] 13fb9544bc459a2351bbcf844f5763d8.svg.gz  18.4 KiB          [emitted]
+[INFO]    14ba0eb7bc457eb780061bd2d412f038.svg  11.1 KiB          [emitted]
+[INFO] 14ba0eb7bc457eb780061bd2d412f038.svg.gz  4.04 KiB          [emitted]
+[INFO]    16a42151226d9c09e44340821c0e2f16.eot  17.1 KiB          [emitted]
+[INFO]  16ddb1541046ada9b90cacf4adec839a.woff2  14.2 KiB          [emitted]
+[INFO]   16e1d930cf13fb7a956372044b6d02d0.woff  18.1 KiB          [emitted]
+[INFO]    1d62466192aea269e7f5c02c16b7eea3.eot  23.5 KiB          [emitted]
+[INFO]   1e65e7e4eaaa9cda89cdf3860e41a401.woff  19.4 KiB          [emitted]
+[INFO]    1edaa6e50c2302bf0221d252e1caebb4.svg  48.8 KiB          [emitted]
+[INFO] 1edaa6e50c2302bf0221d252e1caebb4.svg.gz  16.6 KiB          [emitted]
+[INFO]    258ac0302f36811f0c9e2230ce8d3f78.svg  51.9 KiB          [emitted]
+[INFO] 258ac0302f36811f0c9e2230ce8d3f78.svg.gz  18.1 KiB          [emitted]
+[INFO]    290e6a6c01f4703f351415432980aa2f.svg  53.6 KiB          [emitted]
+[INFO] 290e6a6c01f4703f351415432980aa2f.svg.gz  18.7 KiB          [emitted]
+[INFO]    2a52a20f9a56010ec5d985abe9bebcc9.eot  15.9 KiB          [emitted]
+[INFO]    2f1aacc1587e8f78a21079f754850cc8.eot  17.5 KiB          [emitted]
+[INFO]    349951e73f0dda2c9e35391689a76dbc.svg  15.3 KiB          [emitted]
+[INFO] 349951e73f0dda2c9e35391689a76dbc.svg.gz  5.49 KiB          [emitted]
+[INFO]    355550fa89b82ad35ae1c66af10d798b.eot  15.8 KiB          [emitted]
+[INFO]    3b8bb2030a46cdcf1bf4d739702d1bb9.svg  48.5 KiB          [emitted]
+[INFO] 3b8bb2030a46cdcf1bf4d739702d1bb9.svg.gz  15.9 KiB          [emitted]
+[INFO]   3b9590e03f8940b592cce06bac81eaeb.woff  19.6 KiB          [emitted]
+[INFO]    3d3a53586bd78d1069ae4b89a3b9aa98.svg  47.8 KiB          [emitted]
+[INFO] 3d3a53586bd78d1069ae4b89a3b9aa98.svg.gz  16.2 KiB          [emitted]
+[INFO]  3ddb74822e003b3b41232aa6e64d656b.woff2  15.7 KiB          [emitted]
+[INFO]    3e389501649bb8641db4b9fd439babe5.svg   147 KiB          [emitted]
+[INFO] 3e389501649bb8641db4b9fd439babe5.svg.gz  24.2 KiB          [emitted]
+[INFO]    4027c772a543026f1cca8d0bd3117d89.ttf  49.6 KiB          [emitted]
+[INFO] 4027c772a543026f1cca8d0bd3117d89.ttf.gz  27.6 KiB          [emitted]
+[INFO]   42de89835eafdcf69210bb254061b4e9.woff  19.4 KiB          [emitted]
+[INFO]    4bec22c5d731c1ab60d99a1a07348250.svg  54.7 KiB          [emitted]
+[INFO] 4bec22c5d731c1ab60d99a1a07348250.svg.gz  18.6 KiB          [emitted]
+[INFO]   4d08daebc07fbef23449c61e4ba59fed.woff  19.7 KiB          [emitted]
+[INFO]  4faec832c91a7732ce67680e1492238e.woff2  15.6 KiB          [emitted]
+[INFO]    5053fdae6d1cb534d1e604847fd0dd58.svg   132 KiB          [emitted]
+[INFO] 5053fdae6d1cb534d1e604847fd0dd58.svg.gz  22.1 KiB          [emitted]
+[INFO]    521441155bff858d9a3d5e808aad3d90.svg   137 KiB          [emitted]
+[INFO] 521441155bff858d9a3d5e808aad3d90.svg.gz  22.9 KiB          [emitted]
+[INFO]   525d5b452809b3172a2a34e26d9db546.woff  18.1 KiB          [emitted]
+[INFO]  570eb83859dc23dd0eec423a49e147fe.woff2  43.3 KiB          [emitted]
+[INFO]   57af64fc644194101c1593abea164433.woff  18.1 KiB          [emitted]
+[INFO]    6378f8245382a569a9665182c6b5ebdf.eot  23.5 KiB          [emitted]
+[INFO]   654cb4d3907ce76ae06546007e658318.woff  18.1 KiB          [emitted]
+[INFO]    674f50d287a8c48dc19ba404d20fe713.eot   162 KiB          [emitted]
+[INFO] 674f50d287a8c48dc19ba404d20fe713.eot.gz  95.9 KiB          [emitted]
+[INFO]    6f3bc6374e57a80d355e5869002d4e0f.eot  24.5 KiB          [emitted]
+[INFO]    70f1d1788e02b904089007ac46fd0737.ttf    49 KiB          [emitted]
+[INFO] 70f1d1788e02b904089007ac46fd0737.ttf.gz  26.6 KiB          [emitted]
+[INFO]  7394ca9f8315fedfec68ab850157122b.woff2    15 KiB          [emitted]
+[INFO]   7d622d064f4203ec45c7606b6d93de36.woff  26.5 KiB          [emitted]
+[INFO]  7e367be02cd17a96d513ab74846bafb3.woff2  14.2 KiB          [emitted]
+[INFO]    7f57c4c0f3b44acbe338d7ff6d6ee5b1.svg  47.9 KiB          [emitted]
+[INFO] 7f57c4c0f3b44acbe338d7ff6d6ee5b1.svg.gz  16.3 KiB          [emitted]
+[INFO]    822eba9c24e79985a0c0f9135787a470.eot  17.3 KiB          [emitted]
+[INFO]    835e1e8b85b4b9338d4304fa56c59af7.ttf  48.8 KiB          [emitted]
+[INFO] 835e1e8b85b4b9338d4304fa56c59af7.ttf.gz  26.8 KiB          [emitted]
+[INFO]  8ce598834dcde808ae5a52930d2f198c.woff2  14.2 KiB          [emitted]
+[INFO]    912ec66d7572ff821749319396470bde.svg   434 KiB          [emitted]  [big]
+[INFO] 912ec66d7572ff821749319396470bde.svg.gz   131 KiB          [emitted]
+[INFO]    96166ad6756842b4f7389f7486b02181.eot  16.7 KiB          [emitted]
+[INFO]  984ae3788bccf682cc5eaaf9398a41ef.woff2  15.4 KiB          [emitted]
+[INFO]   9a3edaa89af346ec20e51a46daf2f880.woff  27.5 KiB          [emitted]
+[INFO]  9e7beee5510fcd9cbc4dd37f2c721f14.woff2  15.4 KiB          [emitted]
+[INFO]    9f916e330c478bbfa2a0dd6614042046.eot  15.8 KiB          [emitted]
+[INFO]   a00c9ff184feea7d29bb304f220bae43.woff  26.7 KiB          [emitted]
+[INFO]    a37b0c01c0baf1888ca812cc0508f6e2.ttf   125 KiB          [emitted]
+[INFO] a37b0c01c0baf1888ca812cc0508f6e2.ttf.gz  58.3 KiB          [emitted]
+[INFO]  acee0ea9a8fefc488c5ba3f0cea449c2.woff2  15.4 KiB          [emitted]
+[INFO]   ad0e74fca35d6766929fd91189a201ef.woff    19 KiB          [emitted]
+[INFO]  af7ae505a9eed503f8b8e6982036873e.woff2  75.4 KiB          [emitted]
+[INFO]    b06871f281fee6b241d60582ae9369b9.ttf   162 KiB          [emitted]
+[INFO] b06871f281fee6b241d60582ae9369b9.ttf.gz  95.8 KiB          [emitted]
+[INFO]   b670694ba39f55b5ab9b6022eb09d9ef.woff  19.4 KiB          [emitted]
+[INFO]  bb474f16c9f76f522d656d66aa4a220e.woff2  14.3 KiB          [emitted]
+[INFO]    be16a92a30c03b751abf41550fa0d648.svg   545 KiB          [emitted]  [big]
+[INFO] be16a92a30c03b751abf41550fa0d648.svg.gz   172 KiB          [emitted]
+[INFO]    be923c7b61ad9186171e953e2b711cd8.png    19 KiB          [emitted]
+[INFO]    bf39ef96a254805657605c016263db25.svg  52.2 KiB          [emitted]
+[INFO] bf39ef96a254805657605c016263db25.svg.gz  18.2 KiB          [emitted]
+[INFO]          bundle.337a9afab3dae54302da.js  6.64 MiB       0  [emitted]  [big]  main
+[INFO]       bundle.337a9afab3dae54302da.js.gz  1.67 MiB          [emitted]  [big]
+[INFO]    c3547b2ec6f5eb324b44d8a0c6b2dd31.eot  15.8 KiB          [emitted]
+[INFO]   de984c02ef9e756eceb2afbb2257425a.woff  18.1 KiB          [emitted]
+[INFO]    e2085b4924b30d8b80f9b81597543d6a.eot  15.8 KiB          [emitted]
+[INFO]    e43f0ef2eed55dc9e390c5032255e6f4.svg  47.1 KiB          [emitted]
+[INFO] e43f0ef2eed55dc9e390c5032255e6f4.svg.gz  15.9 KiB          [emitted]
+[INFO]    e50328c08c4a180a683e2dfe9c5cb7ed.eot  17.2 KiB          [emitted]
+[INFO]    e79bfd88537def476913f3ed52f4f4b3.eot   140 KiB          [emitted]
+[INFO] e79bfd88537def476913f3ed52f4f4b3.eot.gz  66.5 KiB          [emitted]
+[INFO]   ecce92d0b0ff17197f29e7db6397bf0a.woff  18.1 KiB          [emitted]
+[INFO]    f1d811cdfaea49c969500d4bbe52251b.svg  47.5 KiB          [emitted]
+[INFO] f1d811cdfaea49c969500d4bbe52251b.svg.gz  16.2 KiB          [emitted]
+[INFO]  f4e8dc5995b7b64c394f30df27a83612.woff2  14.2 KiB          [emitted]
+[INFO]    fafacae60c9b5a39505cf2307cac81d1.eot  17.1 KiB          [emitted]
+[INFO]   fee66e712a8a08eef5805a46892932ad.woff  95.7 KiB          [emitted]
+[INFO]    locale/locale.constant-cs_CZ.json.gz  17.5 KiB          [emitted]
+[INFO]    locale/locale.constant-de_DE.json.gz  18.1 KiB          [emitted]
+[INFO]    locale/locale.constant-el_GR.json.gz  32.7 KiB          [emitted]
+[INFO]    locale/locale.constant-en_US.json.gz  16.7 KiB          [emitted]
+[INFO]    locale/locale.constant-es_ES.json.gz  18.6 KiB          [emitted]
+[INFO]    locale/locale.constant-fa_IR.json.gz  17.6 KiB          [emitted]
+[INFO]    locale/locale.constant-fr_FR.json.gz  18.4 KiB          [emitted]
+[INFO]    locale/locale.constant-it_IT.json.gz  17.3 KiB          [emitted]
+[INFO]    locale/locale.constant-ja_JA.json.gz  16.3 KiB          [emitted]
+[INFO]    locale/locale.constant-ko_KR.json.gz  14.4 KiB          [emitted]
+[INFO]    locale/locale.constant-ru_RU.json.gz  21.9 KiB          [emitted]
+[INFO]    locale/locale.constant-tr_TR.json.gz  16.8 KiB          [emitted]
+[INFO]    locale/locale.constant-uk_UA.json.gz  29.4 KiB          [emitted]
+[INFO]    locale/locale.constant-zh_CN.json.gz  16.3 KiB          [emitted]
+[INFO]    locale/locale.constant-zh_TW.json.gz  16.2 KiB          [emitted]
+[INFO]       locale\locale.constant-cs_CZ.json  91.7 KiB          [emitted]
+[INFO]       locale\locale.constant-de_DE.json  89.2 KiB          [emitted]
+[INFO]       locale\locale.constant-el_GR.json   186 KiB          [emitted]
+[INFO]       locale\locale.constant-en_US.json  93.1 KiB          [emitted]
+[INFO]       locale\locale.constant-es_ES.json   101 KiB          [emitted]
+[INFO]       locale\locale.constant-fa_IR.json   107 KiB          [emitted]
+[INFO]       locale\locale.constant-fr_FR.json   100 KiB          [emitted]
+[INFO]       locale\locale.constant-it_IT.json    94 KiB          [emitted]
+[INFO]       locale\locale.constant-ja_JA.json  77.9 KiB          [emitted]
+[INFO]       locale\locale.constant-ko_KR.json  71.5 KiB          [emitted]
+[INFO]       locale\locale.constant-ru_RU.json   134 KiB          [emitted]
+[INFO]       locale\locale.constant-tr_TR.json  87.6 KiB          [emitted]
+[INFO]       locale\locale.constant-uk_UA.json   181 KiB          [emitted]
+[INFO]       locale\locale.constant-zh_CN.json    79 KiB          [emitted]
+[INFO]       locale\locale.constant-zh_TW.json  91.8 KiB          [emitted]
+[INFO]          style.e0b99da24537f8cc7cb9.css   988 KiB       0  [emitted]  [big]  main
+[INFO]       style.e0b99da24537f8cc7cb9.css.gz   128 KiB          [emitted]
+[INFO]                         thingsboard.ico  4.19 KiB          [emitted]
+[INFO] Entrypoint main [big] = style.e0b99da24537f8cc7cb9.css bundle.337a9afab3dae54302da.js
+[INFO]   [25] ./src/app/api/user.service.js 19.4 KiB {0} [built]
+[INFO]   [48] (webpack)/buildin/module.js 497 bytes {0} [built]
+[INFO]   [64] ./src/app/api/login.service.js 3.23 KiB {0} [built]
+[INFO]  [678] ./src/app/api/time.service.js 13.5 KiB {0} [built]
+[INFO]  [853] ./src/svg/mdi.svg 82 bytes {0} [built]
+[INFO]  [855] multi ./src/app/app.js webpack-material-design-icons 40 bytes {0} [built]
+[INFO]  [856] ./src/app/ie.support.js 2.44 KiB {0} [built]
+[INFO] [1309] ./src/scss/main.scss 39 bytes {0} [built]
+[INFO] [1310] ./src/app/login/login.scss 39 bytes {0} [built]
+[INFO] [1312] ./src/app/services/toast.scss 39 bytes {0} [built]
+[INFO] [1452] ./src/app/help/help.scss 39 bytes {0} [built]
+[INFO] [1453] ./src/app/layout/home.scss 39 bytes {0} [built]
+[INFO] [1572] (webpack)-material-design-icons/index.js 57 bytes {0} [built]
+[INFO] [1573] (webpack)-material-design-icons/material-design-icons.css 39 bytes {0} [built]
+[INFO] [1574] ./src/app/app.js + 273 modules 1.94 MiB {0} [built]
+[INFO]        | ./src/app/app.js 5.67 KiB [built]
+[INFO]        | ./src/app/common/thirdparty-fix.js 16.2 KiB [built]
+[INFO]        | ./src/app/locale/translate-handler.js 1.05 KiB [built]
+[INFO]        | ./src/app/services/toast.js 869 bytes [built]
+[INFO]        | ./src/app/login/index.js 1.53 KiB [built]
+[INFO]        | ./src/app/common/types.constant.js 21.1 KiB [built]
+[INFO]        | ./src/app/common/utils.service.js 19.2 KiB [built]
+[INFO]        | ./src/app/services/menu.service.js 8.62 KiB [built]
+[INFO]        | ./src/app/common/raf.provider.js 1.5 KiB [built]
+[INFO]        | ./src/app/common/dashboard-utils.service.js 19.4 KiB [built]
+[INFO]        | ./src/app/help/help.directive.js 2.26 KiB [built]
+[INFO]        | ./src/app/services/clipboard.service.js 3.44 KiB [built]
+[INFO]        | ./src/app/api/device.service.js 10.7 KiB [built]
+[INFO]        | ./src/app/api/asset.service.js 8.73 KiB [built]
+[INFO]        | ./src/app/api/entity-view.service.js 7.22 KiB [built]
+[INFO]        |     + 259 hidden modules
+[INFO]     + 1687 hidden modules
+[INFO]
+[INFO] WARNING in ./node_modules/ws/lib/BufferUtil.js
+[INFO] Module not found: Error: Can't resolve 'bufferutil' in 'E:\Project\thingsboard-1\ui\node_modules\ws\lib'
+[INFO]  @ ./node_modules/ws/lib/BufferUtil.js
+[INFO]  @ ./node_modules/ws/lib/Receiver.js
+[INFO]  @ ./node_modules/ws/index.js
+[INFO]  @ ./node_modules/angular-websocket/dist/angular-websocket.js
+[INFO]  @ ./src/app/app.js
+[INFO]  @ multi ./src/app/app.js webpack-material-design-icons
+[INFO]
+[INFO] WARNING in ./node_modules/ws/lib/Validation.js
+[INFO] Module not found: Error: Can't resolve 'utf-8-validate' in 'E:\Project\thingsboard-1\ui\node_modules\ws\lib'
+[INFO]  @ ./node_modules/ws/lib/Validation.js
+[INFO]  @ ./node_modules/ws/lib/Receiver.js
+[INFO]  @ ./node_modules/ws/index.js
+[INFO]  @ ./node_modules/angular-websocket/dist/angular-websocket.js
+[INFO]  @ ./src/app/app.js
+[INFO]  @ multi ./src/app/app.js webpack-material-design-icons
+[INFO]
+[INFO] WARNING in asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+[INFO] This can impact web performance.
+[INFO] Assets:
+[INFO]   be16a92a30c03b751abf41550fa0d648.svg (545 KiB)
+[INFO]   912ec66d7572ff821749319396470bde.svg (434 KiB)
+[INFO]   style.e0b99da24537f8cc7cb9.css (988 KiB)
+[INFO]   bundle.337a9afab3dae54302da.js (6.64 MiB)
+[INFO]   bundle.337a9afab3dae54302da.js.gz (1.67 MiB)
+[INFO]
+[INFO] WARNING in entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+[INFO] Entrypoints:
+[INFO]   main (7.61 MiB)
+[INFO]       style.e0b99da24537f8cc7cb9.css
+[INFO]       bundle.337a9afab3dae54302da.js
+[INFO]
+[INFO]
+[INFO] WARNING in webpack performance recommendations:
+[INFO] You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.
+[INFO] For more info visit https://webpack.js.org/guides/code-splitting/
+[INFO] Child html-webpack-plugin for "..\index.html":
+[INFO]      1 asset
+[INFO]     Entrypoint undefined = ../index.html
+[INFO]     [0] ./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html 1.44 KiB {0} [built]
+[INFO]     [2] (webpack)/buildin/global.js 472 bytes {0} [built]
+[INFO]     [3] (webpack)/buildin/module.js 497 bytes {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/angular-carousel/dist/angular-carousel.min.css:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/angular-gridster/dist/angular-gridster.min.css:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/angular-hotkeys/build/hotkeys.min.css:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/angular-material-data-table/dist/md-data-table.min.css:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/angular-material-expansion-panel/dist/md-expansion-panel.min.css:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/angular-material-icons/angular-material-icons.css:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/angular-material/angular-material.min.css:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/font-awesome/css/font-awesome.min.css:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        9 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/jquery.terminal/css/jquery.terminal.min.css:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/jstree-bootstrap-theme/dist/themes/proton/style.min.css:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        18 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/leaflet.markercluster/dist/MarkerCluster.Default.css:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/leaflet.markercluster/dist/MarkerCluster.css:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/leaflet/dist/leaflet.css:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        6 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/material-steppers/dist/material-steppers.css:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/md-color-picker/dist/mdColorPicker.min.css:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/md-date-range-picker/src/md-date-range-picker.css:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/mdPickers/dist/mdPickers.min.css:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/ngFlowchart/dist/flowchart.css:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/admin/settings-card.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/admin/settings-card.scss 2.07 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/alarm/alarm-details-dialog.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/alarm/alarm-details-dialog.scss 1.03 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/alarm/alarm.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/alarm/alarm.scss 1.85 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/audit/audit-log-details-dialog.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/audit/audit-log-details-dialog.scss 995 bytes {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/audit/audit-log.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/audit/audit-log.scss 2.15 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/components/dashboard-autocomplete.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/components/dashboard-select.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/components/dashboard.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/components/datakey-config.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/components/datasource-entity.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/components/datasource-func.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/components/datasource.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/components/datetime-period.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/components/details-sidenav.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/components/entity-alias-select.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/components/expand-fullscreen.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/components/grid.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/components/js-func.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/components/json-content.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/components/json-form.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/components/json-object-edit.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/components/kv-map.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/components/legend-config.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/components/legend.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/components/material-icon-select.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/components/material-icons-dialog.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/components/md-chip-draggable.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/components/menu-link.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/components/nav-tree.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [3] ./src/png/jstree/32px.png 82 bytes {0} [built]
+[INFO]     [4] ./src/png/jstree/40px.png 2.49 KiB {0} [built]
+[INFO]         + 3 hidden modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/components/react/json-form-ace-editor.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/components/react/json-form-color.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/components/react/json-form-image.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/components/react/json-form.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/components/related-entity-autocomplete.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/components/side-menu.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/components/timeinterval.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/components/timewindow.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/components/widget/action/custom-action-pretty-editor.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        4 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/components/widget/action/manage-widget-actions.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/components/widget/widget-config.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/components/widget/widget.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/components/widgets-bundle-select.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/dashboard/dashboard-card.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/dashboard/dashboard-card.scss 1.11 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/dashboard/dashboard-settings.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/dashboard/dashboard-settings.scss 1.78 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/dashboard/dashboard-toolbar.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/dashboard/dashboard-toolbar.scss 7.65 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/dashboard/dashboard.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/dashboard/dashboard.scss 4.33 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/dashboard/states/default-state-controller.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/dashboard/states/default-state-controller.scss 884 bytes {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/dashboard/states/entity-state-controller.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/dashboard/states/entity-state-controller.scss 2.47 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/dashboard/states/manage-dashboard-states.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/dashboard/states/manage-dashboard-states.scss 1.01 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/entity-view/entity-view.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/entity-view/entity-view.scss 2.61 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/entity/alias/aliases-entity-select.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/entity/alias/aliases-entity-select.scss 2.86 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/entity/alias/entity-alias-dialog.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/entity/alias/entity-alias-dialog.scss 1.09 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/entity/alias/entity-aliases.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/entity/alias/entity-aliases.scss 1.53 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/entity/attribute/attribute-table.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/entity/attribute/attribute-table.scss 2.43 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/entity/entity-autocomplete.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/entity/entity-autocomplete.scss 1010 bytes {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/entity/entity-filter-view.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/entity/entity-filter-view.scss 1.18 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/entity/entity-filter.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/entity/entity-filter.scss 1.22 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/entity/entity-list.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/entity/entity-list.scss 1.07 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/entity/entity-select.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/entity/entity-select.scss 865 bytes {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/entity/entity-subtype-autocomplete.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/entity/entity-subtype-autocomplete.scss 1 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/entity/entity-subtype-list.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/entity/entity-subtype-list.scss 1.09 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/entity/entity-subtype-select.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/entity/entity-subtype-select.scss 888 bytes {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/entity/entity-type-list.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/entity/entity-type-list.scss 1.08 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/entity/entity-type-select.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/entity/entity-type-select.scss 879 bytes {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/entity/relation/relation-dialog.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/entity/relation/relation-dialog.scss 1.07 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/entity/relation/relation-filters.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/entity/relation/relation-filters.scss 2.07 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/entity/relation/relation-table.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/entity/relation/relation-table.scss 2.02 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/entity/relation/relation-type-autocomplete.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/entity/relation/relation-type-autocomplete.scss 1 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/event/event.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/event/event.scss 2.25 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/extension/extension-table.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/extension/extension-table.scss 2.55 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/extension/extensions-forms/extension-form.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/extension/extensions-forms/extension-form.scss 1.91 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/help/help.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/help/help.scss 2.06 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/home/home-links.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/home/home-links.scss 2.06 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/import-export/import-dialog.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/import-export/import-dialog.scss 2.63 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/jsonform/jsonform.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/jsonform/jsonform.scss 889 bytes {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/layout/home.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/layout/home.scss 49 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/layout/user-menu.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/layout/user-menu.scss 1.29 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/login/login.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/login/login.scss 2.21 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/rulechain/link.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/rulechain/link.scss 1.09 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/rulechain/message-type-autocomplete.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/rulechain/message-type-autocomplete.scss 1020 bytes {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/rulechain/rulechain.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/rulechain/rulechain.scss 12.1 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/rulechain/rulenode.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/rulechain/rulenode.scss 1.01 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/rulechain/script/node-script-test.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/rulechain/script/node-script-test.scss 4.55 KiB {0} [built]
+[INFO]         + 4 hidden modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/services/toast.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/services/toast.scss 1.22 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/user/user-fieldset.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/user/user-fieldset.scss 2.22 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/widget/lib/add-entity-panel.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/widget/lib/add-entity-panel.scss 1.08 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/widget/lib/alarm-status-filter-panel.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/widget/lib/alarm-status-filter-panel.scss 1.15 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/widget/lib/alarms-table-widget.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/widget/lib/alarms-table-widget.scss 2.92 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/widget/lib/date-range-navigator/date-range-navigator.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/widget/lib/date-range-navigator/date-range-navigator.scss 2.54 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/widget/lib/display-columns-panel.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/widget/lib/display-columns-panel.scss 1.14 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/widget/lib/entities-hierarchy-widget.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/widget/lib/entities-hierarchy-widget.scss 3.13 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/widget/lib/entities-table-widget.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/widget/lib/entities-table-widget.scss 2.95 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/widget/lib/extensions-table-widget.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/widget/lib/extensions-table-widget.scss 1.01 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/widget/lib/multiple-input-widget.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/widget/lib/multiple-input-widget.scss 3.06 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/widget/lib/rpc/knob.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/widget/lib/rpc/knob.scss 3.72 KiB {0} [built]
+[INFO]     [3] ./src/app/widget/lib/rpc/svg/knob.svg 82 bytes {0} [built]
+[INFO]         + 2 hidden modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/widget/lib/rpc/led-indicator.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/widget/lib/rpc/led-indicator.scss 1.9 KiB {0} [built] [2 warnings]
+[INFO]         + 1 hidden module
+[INFO]
+[INFO]     WARNING in ./src/app/widget/lib/rpc/led-indicator.scss (./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/widget/lib/rpc/led-indicator.scss)
+[INFO]     Module Warning (from ./node_modules/postcss-loader/src/index.js):
+[INFO]     Warning
+[INFO]
+[INFO]     (45:7) Gradient has outdated direction syntax. New syntax is like `closest-side at 0 0` instead of `0 0, closest-side`.
+[INFO]
+[INFO]     WARNING in ./src/app/widget/lib/rpc/led-indicator.scss (./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/widget/lib/rpc/led-indicator.scss)
+[INFO]     Module Warning (from ./node_modules/postcss-loader/src/index.js):
+[INFO]     Warning
+[INFO]
+[INFO]     (49:9) Gradient has outdated direction syntax. New syntax is like `closest-side at 0 0` instead of `0 0, closest-side`.
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/widget/lib/rpc/round-switch.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/widget/lib/rpc/round-switch.scss 5.57 KiB {0} [built] [1 warning]
+[INFO]         + 1 hidden module
+[INFO]
+[INFO]     WARNING in ./src/app/widget/lib/rpc/round-switch.scss (./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/widget/lib/rpc/round-switch.scss)
+[INFO]     Module Warning (from ./node_modules/postcss-loader/src/index.js):
+[INFO]     Warning
+[INFO]
+[INFO]     (112:9) Gradient has outdated direction syntax. New syntax is like `closest-side at 0 0` instead of `0 0, closest-side`.
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/widget/lib/rpc/switch.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/widget/lib/rpc/switch.scss 3.41 KiB {0} [built]
+[INFO]     [3] ./src/app/widget/lib/rpc/svg/thumb-bar.svg 5.79 KiB {0} [built]
+[INFO]     [4] ./src/app/widget/lib/rpc/svg/thumb.svg 5.31 KiB {0} [built]
+[INFO]     [5] ./src/app/widget/lib/rpc/svg/thumb-bar-checked.svg 6.68 KiB {0} [built]
+[INFO]     [6] ./src/app/widget/lib/rpc/svg/thumb-checked.svg 6.16 KiB {0} [built]
+[INFO]         + 2 hidden modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/widget/lib/timeseries-table-widget.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/widget/lib/timeseries-table-widget.scss 1.21 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/widget/lib/tripAnimation/trip-animation-widget.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/widget/lib/tripAnimation/trip-animation-widget.scss 3.91 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/widget/lib/web-camera-input-widget.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/widget/lib/web-camera-input-widget.scss 1.85 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/app/widget/widget-editor.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/app/widget/widget-editor.scss 3.68 KiB {0} [built]
+[INFO]         + 4 hidden modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!src/scss/main.scss:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/scss/main.scss 80 KiB {0} [built]
+[INFO]         + 1 hidden module
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/rc-select/assets/index.css:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/tooltipster/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-shadow.min.css:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/tooltipster/dist/css/tooltipster.bundle.min.css:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/typeface-roboto/index.css:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        51 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/v-accordion/dist/v-accordion.min.css:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]        2 modules
+[INFO] Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/webpack-material-design-icons/material-design-icons.css:
+[INFO]     Entrypoint mini-css-extract-plugin = *
+[INFO]     [0] ./node_modules/css-loader/dist/cjs.js!(webpack)-material-design-icons/material-design-icons.css 1.74 KiB {0} [built]
+[INFO]         + 6 hidden modules
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ ui ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 135 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ ui ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ ui ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory E:\Project\thingsboard-1\ui\src\test\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ ui ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-surefire-plugin:3.0.0-M1:test (default-test) @ ui ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ ui ---
+[INFO] Building jar: E:\Project\thingsboard-1\ui\target\ui-2.4.3.jar
+[INFO]
+[INFO] --- maven-install-plugin:3.0.0-M1:install (default-install) @ ui ---
+[INFO] Installing E:\Project\thingsboard-1\ui\target\ui-2.4.3.jar to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\ui\2.4.3\ui-2.4.3.jar
+[INFO] Installing E:\Project\thingsboard-1\ui\pom.xml to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\ui\2.4.3\ui-2.4.3.pom
+[INFO]
+[INFO] -----------------------< org.thingsboard:tools >------------------------
+[INFO] Building Thingsboard Server Tools 2.4.3                          [23/34]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ tools ---
+[INFO] Deleting E:\Project\thingsboard-1\tools\target
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ tools ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory E:\Project\thingsboard-1\tools\src\main\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ tools ---
+[INFO] Compiling 6 source files to E:\Project\thingsboard-1\tools\target\classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ tools ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory E:\Project\thingsboard-1\tools\src\test\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ tools ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-surefire-plugin:3.0.0-M1:test (default-test) @ tools ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ tools ---
+[INFO] Building jar: E:\Project\thingsboard-1\tools\target\tools-2.4.3.jar
+[INFO]
+[INFO] --- maven-install-plugin:3.0.0-M1:install (default-install) @ tools ---
+[INFO] Installing E:\Project\thingsboard-1\tools\target\tools-2.4.3.jar to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\tools\2.4.3\tools-2.4.3.jar
+[INFO] Installing E:\Project\thingsboard-1\tools\pom.xml to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\tools\2.4.3\tools-2.4.3.pom
+[INFO]
+[INFO] --------------------< org.thingsboard:application >---------------------
+[INFO] Building ThingsBoard Server Application 2.4.3                    [24/34]
+[INFO] --------------------------------[ jar ]---------------------------------
+Downloading from nexus: http://maven.aliyun.com/nexus/content/groups/public/io/netty/netty-codec-http2/maven-metadata.xml
+[WARNING] Could not validate integrity of download from http://maven.aliyun.com/nexus/content/groups/public/io/netty/netty-codec-http2/maven-metadata.xml: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available from nexus for http://maven.aliyun.com/nexus/content/groups/public/io/netty/netty-codec-http2/maven-metadata.xml
+Downloaded from nexus: http://maven.aliyun.com/nexus/content/groups/public/io/netty/netty-codec-http2/maven-metadata.xml (2.6 kB at 914 B/s)
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ application ---
+[INFO] Deleting E:\Project\thingsboard-1\application\target
+[INFO]
+[INFO] --- maven-dependency-plugin:2.8:copy (copy-protoc) @ application ---
+[INFO] Configured Artifact: com.google.protobuf:protoc:windows-x86_64:3.6.1:exe
+[INFO] Copying protoc-3.6.1-windows-x86_64.exe to E:\Project\thingsboard-1\application\target\protoc-3.6.1-windows-x86_64.exe
+[INFO]
+[INFO] --- protobuf-maven-plugin:0.5.0:compile (default) @ application ---
+[INFO] Compiling 2 proto file(s) to E:\Project\thingsboard-1\application\target\generated-sources\protobuf\java
+[INFO]
+[INFO] --- protobuf-maven-plugin:0.5.0:compile-custom (default) @ application ---
+[INFO] Compiling 2 proto file(s) to E:\Project\thingsboard-1\application\target\generated-sources\protobuf\grpc-java
+[INFO]
+[INFO] --- build-helper-maven-plugin:1.12:add-source (add-source) @ application ---
+[INFO] Source directory: E:\Project\thingsboard-1\application\target\generated-sources added.
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ application ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 11 resources
+[INFO] Copying 2 resources
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-conf) @ application ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 10 resources
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-service-conf) @ application ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-win-conf) @ application ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 10 resources
+[INFO] Copying 1 resource
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-control) @ application ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 9 resources
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-install) @ application ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-windows-control) @ application ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-windows-install) @ application ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-data) @ application ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 30 resources
+[INFO] Copying 9 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ application ---
+[INFO] Compiling 266 source files to E:\Project\thingsboard-1\application\target\classes
+[INFO]
+[INFO] --- protobuf-maven-plugin:0.5.0:test-compile (default) @ application ---
+[INFO] E:\Project\thingsboard-1\application\src\test\proto does not exist. Review the configuration or consider disabling the plugin.
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ application ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ application ---
+[INFO] Compiling 69 source files to E:\Project\thingsboard-1\application\target\test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ application ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ application ---
+[INFO] Building jar: E:\Project\thingsboard-1\application\target\thingsboard-2.4.3.jar
+[INFO]
+[INFO] --- maven-dependency-plugin:2.8:copy (copy-winsw-service) @ application ---
+[INFO] Configured Artifact: com.sun.winsw:winsw:bin:?:exe
+[INFO] Copying winsw-2.0.1-bin.exe to E:\Project\thingsboard-1\application\target\windows\service.exe
+[INFO]
+[INFO] --- spring-boot-maven-plugin:2.1.3.RELEASE:repackage (default) @ application ---
+[INFO] Layout: ZIP
+[INFO] Attaching repackaged archive E:\Project\thingsboard-1\application\target\thingsboard-2.4.3-boot.jar with classifier boot
+[INFO]
+[INFO] --- gradle-maven-plugin:1.0.8:invoke (default) @ application ---
+[INFO] jvmArgs: [Ljava.lang.String;@3832a463
+[INFO] gradleProjectDirectory: E:\Project\thingsboard-1\application
+[INFO] Build
+[INFO] Validate distribution
+[INFO] Build
+[INFO] Initialize build
+[INFO] Configure settings
+[INFO] Initialize build
+[INFO] Configure projects
+[INFO] Configure project :
+[INFO] Resolve dependencies ':classpath'
+[INFO] Configure project :
+[INFO] Configure projects
+[INFO] Initialize build
+[INFO] Build
+[INFO] Execute tasks
+:assemble[INFO] Execute :assemble
+ UP-TO-DATE
+[INFO] Execute tasks
+:check[INFO] Execute :check
+ UP-TO-DATE
+[INFO] Execute tasks
+:build[INFO] Execute :build
+ UP-TO-DATE
+[INFO] Execute tasks
+:buildDeb[INFO] Execute :buildDeb
+
+[INFO] Execute tasks
+:buildRpm[INFO] Execute :buildRpm
+
+[INFO] Execute tasks
+
+BUILD SUCCESSFUL
+
+Total time: 18.701 secs
+[INFO] Build
+[INFO]
+[INFO] gradle execution complete
+[INFO]
+[INFO] --- maven-assembly-plugin:3.0.0:single (assembly) @ application ---
+[INFO] Reading assembly descriptor: src/main/assembly/windows.xml
+[INFO] Building zip: E:\Project\thingsboard-1\application\target\thingsboard-windows.zip
+[INFO]
+[INFO] --- maven-install-plugin:3.0.0-M1:install-file (install-deb) @ application ---
+[INFO] Installing E:\Project\thingsboard-1\application\target\thingsboard.deb to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\application\2.4.3\application-2.4.3-deb.deb
+[INFO]
+[INFO] --- maven-install-plugin:3.0.0-M1:install (default-install) @ application ---
+[INFO] Installing E:\Project\thingsboard-1\application\target\thingsboard-2.4.3.jar to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\application\2.4.3\application-2.4.3.jar
+[INFO] Installing E:\Project\thingsboard-1\application\pom.xml to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\application\2.4.3\application-2.4.3.pom
+[INFO] Installing E:\Project\thingsboard-1\application\target\thingsboard-2.4.3-boot.jar to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\application\2.4.3\application-2.4.3-boot.jar
+[INFO] Installing E:\Project\thingsboard-1\application\target\thingsboard-windows.zip to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\application\2.4.3\application-2.4.3-windows.zip
+[INFO]
+[INFO] ------------------------< org.thingsboard:msa >-------------------------
+[INFO] Building ThingsBoard Microservices 2.4.3                         [25/34]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ msa ---
+[INFO]
+[INFO] --- maven-install-plugin:3.0.0-M1:install (default-install) @ msa ---
+[INFO] Installing E:\Project\thingsboard-1\msa\pom.xml to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\msa\2.4.3\msa-2.4.3.pom
+[INFO]
+[INFO] -----------------------< org.thingsboard.msa:tb >-----------------------
+[INFO] Building ThingsBoard Docker Images 2.4.3                         [26/34]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ tb ---
+[INFO] Deleting E:\Project\thingsboard-1\msa\tb\target
+[INFO]
+[INFO] --- maven-dependency-plugin:2.8:copy (copy-protoc) @ tb ---
+[INFO] Configured Artifact: com.google.protobuf:protoc:windows-x86_64:3.6.1:exe
+[INFO] Copying protoc-3.6.1-windows-x86_64.exe to E:\Project\thingsboard-1\msa\tb\target\protoc-3.6.1-windows-x86_64.exe
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-docker-tb-config) @ tb ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-docker-tb-postgres-config) @ tb ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-docker-tb-cassandra-config) @ tb ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-dependency-plugin:2.8:copy (copy-tb-deb) @ tb ---
+[INFO] Configured Artifact: org.thingsboard:application:deb:?:deb
+[INFO] Copying application-2.4.3-deb.deb to E:\Project\thingsboard-1\msa\tb\target\docker-tb\thingsboard.deb
+[INFO]
+[INFO] --- maven-dependency-plugin:2.8:copy (copy-tb-postgres-deb) @ tb ---
+[INFO] Configured Artifact: org.thingsboard:application:deb:?:deb
+[INFO] Copying application-2.4.3-deb.deb to E:\Project\thingsboard-1\msa\tb\target\docker-postgres\thingsboard.deb
+[INFO]
+[INFO] --- maven-dependency-plugin:2.8:copy (copy-tb-cassandra-deb) @ tb ---
+[INFO] Configured Artifact: org.thingsboard:application:deb:?:deb
+[INFO] Copying application-2.4.3-deb.deb to E:\Project\thingsboard-1\msa\tb\target\docker-cassandra\thingsboard.deb
+[INFO]
+[INFO] --- dockerfile-maven-plugin:1.4.5:build (build-docker-tb-image) @ tb ---
+[INFO] Skipping execution because 'dockerfile.skip' is set
+[INFO]
+[INFO] --- dockerfile-maven-plugin:1.4.5:tag (tag-docker-tb-image) @ tb ---
+[INFO] Skipping execution because 'dockerfile.skip' is set
+[INFO]
+[INFO] --- dockerfile-maven-plugin:1.4.5:build (build-docker-tb-postgres-image) @ tb ---
+[INFO] Skipping execution because 'dockerfile.skip' is set
+[INFO]
+[INFO] --- dockerfile-maven-plugin:1.4.5:tag (tag-docker-tb-postgres-image) @ tb ---
+[INFO] Skipping execution because 'dockerfile.skip' is set
+[INFO]
+[INFO] --- dockerfile-maven-plugin:1.4.5:build (build-docker-tb-cassandra-image) @ tb ---
+[INFO] Skipping execution because 'dockerfile.skip' is set
+[INFO]
+[INFO] --- dockerfile-maven-plugin:1.4.5:tag (tag-docker-tb-cassandra-image) @ tb ---
+[INFO] Skipping execution because 'dockerfile.skip' is set
+[INFO]
+[INFO] --- maven-install-plugin:3.0.0-M1:install (default-install) @ tb ---
+[INFO] Installing E:\Project\thingsboard-1\msa\tb\pom.xml to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\msa\tb\2.4.3\tb-2.4.3.pom
+[INFO]
+[INFO] ------------------< org.thingsboard.msa:js-executor >-------------------
+[INFO] Building ThingsBoard JavaScript Executor Microservice 2.4.3      [27/34]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ js-executor ---
+[INFO] Deleting E:\Project\thingsboard-1\msa\js-executor\target
+[INFO]
+[INFO] --- maven-dependency-plugin:2.8:copy (copy-protoc) @ js-executor ---
+[INFO] Configured Artifact: com.google.protobuf:protoc:windows-x86_64:3.6.1:exe
+[INFO] Copying protoc-3.6.1-windows-x86_64.exe to E:\Project\thingsboard-1\msa\js-executor\target\protoc-3.6.1-windows-x86_64.exe
+[INFO]
+[INFO] --- frontend-maven-plugin:1.0:install-node-and-npm (install node and npm) @ js-executor ---
+[INFO] Installing node version v12.16.1
+[INFO] Copying node binary from E:\Program Files\Apache Software Foundation\repository\com\github\eirslett\node\12.16.1\node-12.16.1-windows-x64.exe to E:\Project\thingsboard-1\msa\js-executor\target\node\node.exe
+[INFO] Installed node locally.
+[INFO] Installing npm version 6.13.4
+[INFO] Unpacking E:\Program Files\Apache Software Foundation\repository\com\github\eirslett\npm\6.13.4\npm-6.13.4.tar.gz into E:\Project\thingsboard-1\msa\js-executor\target\node\node_modules
+[INFO] Installed npm locally.
+[INFO]
+[INFO] --- frontend-maven-plugin:1.0:npm (npm install) @ js-executor ---
+[INFO] Running 'npm install' in E:\Project\thingsboard-1\msa\js-executor
+[INFO]
+[INFO] > thingsboard-js-executor@2.4.3 install E:\Project\thingsboard-1\msa\js-executor
+[INFO] > pkg -t node10-linux-x64,node10-win-x64 --out-path ./target . && node install.js
+[INFO]
+[INFO] > pkg@4.4.0
+[WARNING] npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.4 (node_modules\fsevents):
+[INFO] up to date in 53.511s
+[WARNING] npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.4: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+[ERROR]
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-linux-conf) @ js-executor ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-linux-init) @ js-executor ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-win-conf) @ js-executor ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-control) @ js-executor ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 9 resources
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-windows-control) @ js-executor ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-docker-config) @ js-executor ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-dependency-plugin:2.8:copy (copy-winsw-service) @ js-executor ---
+[INFO] Configured Artifact: com.sun.winsw:winsw:bin:?:exe
+[INFO] Copying winsw-2.0.1-bin.exe to E:\Project\thingsboard-1\msa\js-executor\target\package\windows\service.exe
+[INFO]
+[INFO] --- gradle-maven-plugin:1.0.8:invoke (default) @ js-executor ---
+[INFO] jvmArgs: [Ljava.lang.String;@903fd79
+[INFO] gradleProjectDirectory: E:\Project\thingsboard-1\msa\js-executor
+[INFO] Build
+[INFO] Validate distribution
+[INFO] Build
+[INFO] Initialize build
+[INFO] Configure settings
+[INFO] Initialize build
+[INFO] Configure projects
+[INFO] Configure project :
+[INFO] Resolve dependencies ':classpath'
+[INFO] Configure project :
+[INFO] Configure projects
+[INFO] Initialize build
+[INFO] Build
+[INFO] Execute tasks
+:assemble[INFO] Execute :assemble
+ UP-TO-DATE
+[INFO] Execute tasks
+:check[INFO] Execute :check
+ UP-TO-DATE
+[INFO] Execute tasks
+:build[INFO] Execute :build
+ UP-TO-DATE
+[INFO] Execute tasks
+:buildDeb[INFO] Execute :buildDeb
+
+[INFO] Execute tasks
+:buildRpm[INFO] Execute :buildRpm
+
+[INFO] Execute tasks
+
+BUILD SUCCESSFUL
+
+Total time: 7.033 secs
+[INFO] Build
+[INFO]
+[INFO] gradle execution complete
+[INFO]
+[INFO] --- maven-assembly-plugin:3.0.0:single (assembly) @ js-executor ---
+[INFO] Reading assembly descriptor: src/main/assembly/windows.xml
+[INFO] Building zip: E:\Project\thingsboard-1\msa\js-executor\target\tb-js-executor-windows.zip
+[INFO]
+[INFO] --- dockerfile-maven-plugin:1.4.5:build (build-docker-image) @ js-executor ---
+[INFO] Skipping execution because 'dockerfile.skip' is set
+[INFO]
+[INFO] --- dockerfile-maven-plugin:1.4.5:tag (tag-docker-image) @ js-executor ---
+[INFO] Skipping execution because 'dockerfile.skip' is set
+[INFO]
+[INFO] --- maven-install-plugin:3.0.0-M1:install (default-install) @ js-executor ---
+[INFO] Installing E:\Project\thingsboard-1\msa\js-executor\pom.xml to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\msa\js-executor\2.4.3\js-executor-2.4.3.pom
+[INFO] Installing E:\Project\thingsboard-1\msa\js-executor\target\tb-js-executor-windows.zip to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\msa\js-executor\2.4.3\js-executor-2.4.3-windows.zip
+[INFO]
+[INFO] ---------------------< org.thingsboard.msa:web-ui >---------------------
+[INFO] Building ThingsBoard Web UI Microservice 2.4.3                   [28/34]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ web-ui ---
+[INFO] Deleting E:\Project\thingsboard-1\msa\web-ui\target
+[INFO]
+[INFO] --- maven-dependency-plugin:2.8:copy (copy-protoc) @ web-ui ---
+[INFO] Configured Artifact: com.google.protobuf:protoc:windows-x86_64:3.6.1:exe
+[INFO] Copying protoc-3.6.1-windows-x86_64.exe to E:\Project\thingsboard-1\msa\web-ui\target\protoc-3.6.1-windows-x86_64.exe
+[INFO]
+[INFO] --- maven-dependency-plugin:2.8:unpack (extract-web-ui) @ web-ui ---
+[INFO] Configured Artifact: org.thingsboard:ui:?:jar
+[INFO] Unpacking E:\Project\thingsboard-1\ui\target\ui-2.4.3.jar to E:\Project\thingsboard-1\msa\web-ui\target\web with includes "" and excludes ""
+[INFO]
+[INFO] --- frontend-maven-plugin:1.0:install-node-and-npm (install node and npm) @ web-ui ---
+[INFO] Installing node version v12.16.1
+[INFO] Copying node binary from E:\Program Files\Apache Software Foundation\repository\com\github\eirslett\node\12.16.1\node-12.16.1-windows-x64.exe to E:\Project\thingsboard-1\msa\web-ui\target\node\node.exe
+[INFO] Installed node locally.
+[INFO] Installing npm version 6.13.4
+[INFO] Unpacking E:\Program Files\Apache Software Foundation\repository\com\github\eirslett\npm\6.13.4\npm-6.13.4.tar.gz into E:\Project\thingsboard-1\msa\web-ui\target\node\node_modules
+[INFO] Installed npm locally.
+[INFO]
+[INFO] --- frontend-maven-plugin:1.0:npm (npm install) @ web-ui ---
+[INFO] Running 'npm install' in E:\Project\thingsboard-1\msa\web-ui
+[INFO]
+[INFO] > thingsboard-web-ui@2.4.3 install E:\Project\thingsboard-1\msa\web-ui
+[INFO] > pkg -t node10-linux-x64,node10-win-x64 --out-path ./target . && node install.js
+[INFO]
+[INFO] > pkg@4.4.0
+[INFO] > Warning Cannot stat, ENOENT
+[INFO]   E:\Project\thingsboard-1\msa\web-ui\web
+[INFO]   The file was required from 'E:\Project\thingsboard-1\msa\web-ui\server.js'
+[WARNING] npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.4 (node_modules\fsevents):
+[INFO] up to date in 39.129s
+[WARNING] npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.4: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+[ERROR]
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-linux-conf) @ web-ui ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-linux-init) @ web-ui ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-win-conf) @ web-ui ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-control) @ web-ui ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 9 resources
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-windows-control) @ web-ui ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-docker-config) @ web-ui ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-dependency-plugin:2.8:copy (copy-winsw-service) @ web-ui ---
+[INFO] Configured Artifact: com.sun.winsw:winsw:bin:?:exe
+[INFO] Copying winsw-2.0.1-bin.exe to E:\Project\thingsboard-1\msa\web-ui\target\package\windows\service.exe
+[INFO]
+[INFO] --- gradle-maven-plugin:1.0.8:invoke (default) @ web-ui ---
+[INFO] jvmArgs: [Ljava.lang.String;@511ff282
+[INFO] gradleProjectDirectory: E:\Project\thingsboard-1\msa\web-ui
+[INFO] Build
+[INFO] Validate distribution
+[INFO] Build
+[INFO] Initialize build
+[INFO] Configure settings
+[INFO] Initialize build
+[INFO] Configure projects
+[INFO] Configure project :
+[INFO] Resolve dependencies ':classpath'
+[INFO] Configure project :
+[INFO] Configure projects
+[INFO] Initialize build
+[INFO] Build
+[INFO] Execute tasks
+:assemble[INFO] Execute :assemble
+ UP-TO-DATE
+[INFO] Execute tasks
+:check[INFO] Execute :check
+ UP-TO-DATE
+[INFO] Execute tasks
+:build[INFO] Execute :build
+ UP-TO-DATE
+[INFO] Execute tasks
+:buildDeb[INFO] Execute :buildDeb
+
+[INFO] Execute tasks
+:buildRpm[INFO] Execute :buildRpm
+
+[INFO] Execute tasks
+
+BUILD SUCCESSFUL
+
+Total time: 10.469 secs
+[INFO] Build
+[INFO]
+[INFO] gradle execution complete
+[INFO]
+[INFO] --- maven-assembly-plugin:3.0.0:single (assembly) @ web-ui ---
+[INFO] Reading assembly descriptor: src/main/assembly/windows.xml
+[INFO] Building zip: E:\Project\thingsboard-1\msa\web-ui\target\tb-web-ui-windows.zip
+[INFO]
+[INFO] --- dockerfile-maven-plugin:1.4.5:build (build-docker-image) @ web-ui ---
+[INFO] Skipping execution because 'dockerfile.skip' is set
+[INFO]
+[INFO] --- dockerfile-maven-plugin:1.4.5:tag (tag-docker-image) @ web-ui ---
+[INFO] Skipping execution because 'dockerfile.skip' is set
+[INFO]
+[INFO] --- maven-install-plugin:3.0.0-M1:install (default-install) @ web-ui ---
+[INFO] Installing E:\Project\thingsboard-1\msa\web-ui\pom.xml to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\msa\web-ui\2.4.3\web-ui-2.4.3.pom
+[INFO] Installing E:\Project\thingsboard-1\msa\web-ui\target\tb-web-ui-windows.zip to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\msa\web-ui\2.4.3\web-ui-2.4.3-windows.zip
+[INFO]
+[INFO] --------------------< org.thingsboard.msa:tb-node >---------------------
+[INFO] Building ThingsBoard Node Microservice 2.4.3                     [29/34]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ tb-node ---
+[INFO] Deleting E:\Project\thingsboard-1\msa\tb-node\target
+[INFO]
+[INFO] --- maven-dependency-plugin:2.8:copy (copy-protoc) @ tb-node ---
+[INFO] Configured Artifact: com.google.protobuf:protoc:windows-x86_64:3.6.1:exe
+[INFO] Copying protoc-3.6.1-windows-x86_64.exe to E:\Project\thingsboard-1\msa\tb-node\target\protoc-3.6.1-windows-x86_64.exe
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-docker-config) @ tb-node ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-dependency-plugin:2.8:copy (copy-tb-deb) @ tb-node ---
+[INFO] Configured Artifact: org.thingsboard:application:deb:?:deb
+[INFO] Copying application-2.4.3-deb.deb to E:\Project\thingsboard-1\msa\tb-node\target\thingsboard.deb
+[INFO]
+[INFO] --- dockerfile-maven-plugin:1.4.5:build (build-docker-image) @ tb-node ---
+[INFO] Skipping execution because 'dockerfile.skip' is set
+[INFO]
+[INFO] --- dockerfile-maven-plugin:1.4.5:tag (tag-docker-image) @ tb-node ---
+[INFO] Skipping execution because 'dockerfile.skip' is set
+[INFO]
+[INFO] --- maven-install-plugin:3.0.0-M1:install (default-install) @ tb-node ---
+[INFO] Installing E:\Project\thingsboard-1\msa\tb-node\pom.xml to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\msa\tb-node\2.4.3\tb-node-2.4.3.pom
+[INFO]
+[INFO] -------------------< org.thingsboard.msa:transport >--------------------
+[INFO] Building ThingsBoard Transport Microservices 2.4.3               [30/34]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ transport ---
+[INFO]
+[INFO] --- maven-install-plugin:3.0.0-M1:install (default-install) @ transport ---
+[INFO] Installing E:\Project\thingsboard-1\msa\transport\pom.xml to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\msa\transport\2.4.3\transport-2.4.3.pom
+[INFO]
+[INFO] -----------------< org.thingsboard.msa.transport:mqtt >-----------------
+[INFO] Building ThingsBoard MQTT Transport Microservice 2.4.3           [31/34]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ mqtt ---
+[INFO] Deleting E:\Project\thingsboard-1\msa\transport\mqtt\target
+[INFO]
+[INFO] --- maven-dependency-plugin:2.8:copy (copy-protoc) @ mqtt ---
+[INFO] Configured Artifact: com.google.protobuf:protoc:windows-x86_64:3.6.1:exe
+[INFO] Copying protoc-3.6.1-windows-x86_64.exe to E:\Project\thingsboard-1\msa\transport\mqtt\target\protoc-3.6.1-windows-x86_64.exe
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-docker-config) @ mqtt ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-dependency-plugin:2.8:copy (copy-tb-mqtt-transport-deb) @ mqtt ---
+[INFO] Configured Artifact: org.thingsboard.transport:mqtt:deb:?:deb
+[INFO] Copying mqtt-2.4.3-deb.deb to E:\Project\thingsboard-1\msa\transport\mqtt\target\tb-mqtt-transport.deb
+[INFO]
+[INFO] --- dockerfile-maven-plugin:1.4.5:build (build-docker-image) @ mqtt ---
+[INFO] Skipping execution because 'dockerfile.skip' is set
+[INFO]
+[INFO] --- dockerfile-maven-plugin:1.4.5:tag (tag-docker-image) @ mqtt ---
+[INFO] Skipping execution because 'dockerfile.skip' is set
+[INFO]
+[INFO] --- maven-install-plugin:3.0.0-M1:install (default-install) @ mqtt ---
+[INFO] Installing E:\Project\thingsboard-1\msa\transport\mqtt\pom.xml to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\msa\transport\mqtt\2.4.3\mqtt-2.4.3.pom
+[INFO]
+[INFO] -----------------< org.thingsboard.msa.transport:http >-----------------
+[INFO] Building ThingsBoard HTTP Transport Microservice 2.4.3           [32/34]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ http ---
+[INFO] Deleting E:\Project\thingsboard-1\msa\transport\http\target
+[INFO]
+[INFO] --- maven-dependency-plugin:2.8:copy (copy-protoc) @ http ---
+[INFO] Configured Artifact: com.google.protobuf:protoc:windows-x86_64:3.6.1:exe
+[INFO] Copying protoc-3.6.1-windows-x86_64.exe to E:\Project\thingsboard-1\msa\transport\http\target\protoc-3.6.1-windows-x86_64.exe
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-docker-config) @ http ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-dependency-plugin:2.8:copy (copy-tb-http-transport-deb) @ http ---
+[INFO] Configured Artifact: org.thingsboard.transport:http:deb:?:deb
+[INFO] Copying http-2.4.3-deb.deb to E:\Project\thingsboard-1\msa\transport\http\target\tb-http-transport.deb
+[INFO]
+[INFO] --- dockerfile-maven-plugin:1.4.5:build (build-docker-image) @ http ---
+[INFO] Skipping execution because 'dockerfile.skip' is set
+[INFO]
+[INFO] --- dockerfile-maven-plugin:1.4.5:tag (tag-docker-image) @ http ---
+[INFO] Skipping execution because 'dockerfile.skip' is set
+[INFO]
+[INFO] --- maven-install-plugin:3.0.0-M1:install (default-install) @ http ---
+[INFO] Installing E:\Project\thingsboard-1\msa\transport\http\pom.xml to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\msa\transport\http\2.4.3\http-2.4.3.pom
+[INFO]
+[INFO] -----------------< org.thingsboard.msa.transport:coap >-----------------
+[INFO] Building ThingsBoard COAP Transport Microservice 2.4.3           [33/34]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ coap ---
+[INFO] Deleting E:\Project\thingsboard-1\msa\transport\coap\target
+[INFO]
+[INFO] --- maven-dependency-plugin:2.8:copy (copy-protoc) @ coap ---
+[INFO] Configured Artifact: com.google.protobuf:protoc:windows-x86_64:3.6.1:exe
+[INFO] Copying protoc-3.6.1-windows-x86_64.exe to E:\Project\thingsboard-1\msa\transport\coap\target\protoc-3.6.1-windows-x86_64.exe
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-docker-config) @ coap ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-dependency-plugin:2.8:copy (copy-tb-coap-transport-deb) @ coap ---
+[INFO] Configured Artifact: org.thingsboard.transport:coap:deb:?:deb
+[INFO] Copying coap-2.4.3-deb.deb to E:\Project\thingsboard-1\msa\transport\coap\target\tb-coap-transport.deb
+[INFO]
+[INFO] --- dockerfile-maven-plugin:1.4.5:build (build-docker-image) @ coap ---
+[INFO] Skipping execution because 'dockerfile.skip' is set
+[INFO]
+[INFO] --- dockerfile-maven-plugin:1.4.5:tag (tag-docker-image) @ coap ---
+[INFO] Skipping execution because 'dockerfile.skip' is set
+[INFO]
+[INFO] --- maven-install-plugin:3.0.0-M1:install (default-install) @ coap ---
+[INFO] Installing E:\Project\thingsboard-1\msa\transport\coap\pom.xml to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\msa\transport\coap\2.4.3\coap-2.4.3.pom
+[INFO]
+[INFO] ----------------< org.thingsboard.msa:black-box-tests >-----------------
+[INFO] Building ThingsBoard Black Box Tests 2.4.3                       [34/34]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ black-box-tests ---
+[INFO] Deleting E:\Project\thingsboard-1\msa\black-box-tests\target
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ black-box-tests ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory E:\Project\thingsboard-1\msa\black-box-tests\src\main\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ black-box-tests ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ black-box-tests ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ black-box-tests ---
+[INFO] Compiling 9 source files to E:\Project\thingsboard-1\msa\black-box-tests\target\test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:3.0.0-M1:test (default-test) @ black-box-tests ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ black-box-tests ---
+[WARNING] JAR will be empty - no content was marked for inclusion!
+[INFO] Building jar: E:\Project\thingsboard-1\msa\black-box-tests\target\black-box-tests-2.4.3.jar
+[INFO]
+[INFO] --- maven-install-plugin:3.0.0-M1:install (default-install) @ black-box-tests ---
+[INFO] Installing E:\Project\thingsboard-1\msa\black-box-tests\target\black-box-tests-2.4.3.jar to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\msa\black-box-tests\2.4.3\black-box-tests-2.4.3.jar
+[INFO] Installing E:\Project\thingsboard-1\msa\black-box-tests\pom.xml to E:\Program Files\Apache Software Foundation\repository\org\thingsboard\msa\black-box-tests\2.4.3\black-box-tests-2.4.3.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Thingsboard 2.4.3:
+[INFO]
+[INFO] Thingsboard ........................................ SUCCESS [  8.049 s]
+[INFO] Netty MQTT Client .................................. SUCCESS [ 17.544 s]
+[INFO] Thingsboard Server Commons ......................... SUCCESS [  0.063 s]
+[INFO] Thingsboard Server Common Data ..................... SUCCESS [ 11.495 s]
+[INFO] Thingsboard Server Common Utils .................... SUCCESS [  0.756 s]
+[INFO] Thingsboard Server Common Messages ................. SUCCESS [  7.728 s]
+[INFO] Thingsboard Server Queue components ................ SUCCESS [  3.788 s]
+[INFO] Thingsboard Server Commons ......................... SUCCESS [  0.063 s]
+[INFO] Thingsboard Server Common Transport components ..... SUCCESS [  8.932 s]
+[INFO] Thingsboard MQTT Transport Common .................. SUCCESS [  2.868 s]
+[INFO] Thingsboard HTTP Transport Common .................. SUCCESS [  1.018 s]
+[INFO] Thingsboard CoAP Transport Common .................. SUCCESS [  2.213 s]
+[INFO] Thingsboard Server Common DAO API .................. SUCCESS [  3.105 s]
+[INFO] Thingsboard Extensions ............................. SUCCESS [  0.050 s]
+[INFO] Thingsboard Rule Engine API ........................ SUCCESS [  2.300 s]
+[INFO] Thingsboard Server DAO Layer ....................... SUCCESS [ 28.922 s]
+[INFO] Thingsboard Rule Engine Components ................. SUCCESS [ 43.269 s]
+[INFO] Thingsboard Server Transport Modules ............... SUCCESS [  0.108 s]
+[INFO] Thingsboard HTTP Transport Service ................. SUCCESS [ 32.450 s]
+[INFO] Thingsboard MQTT Transport Service ................. SUCCESS [ 13.000 s]
+[INFO] Thingsboard CoAP Transport Service ................. SUCCESS [ 10.209 s]
+[INFO] Thingsboard Server UI .............................. SUCCESS [05:10 min]
+[INFO] Thingsboard Server Tools ........................... SUCCESS [  5.627 s]
+[INFO] ThingsBoard Server Application ..................... SUCCESS [01:11 min]
+[INFO] ThingsBoard Microservices .......................... SUCCESS [  0.458 s]
+[INFO] ThingsBoard Docker Images .......................... SUCCESS [ 14.518 s]
+[INFO] ThingsBoard JavaScript Executor Microservice ....... SUCCESS [01:24 min]
+[INFO] ThingsBoard Web UI Microservice .................... SUCCESS [01:25 min]
+[INFO] ThingsBoard Node Microservice ...................... SUCCESS [  0.372 s]
+[INFO] ThingsBoard Transport Microservices ................ SUCCESS [  0.061 s]
+[INFO] ThingsBoard MQTT Transport Microservice ............ SUCCESS [  1.161 s]
+[INFO] ThingsBoard HTTP Transport Microservice ............ SUCCESS [  3.061 s]
+[INFO] ThingsBoard COAP Transport Microservice ............ SUCCESS [  0.625 s]
+[INFO] ThingsBoard Black Box Tests ........................ SUCCESS [  9.113 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  13:11 min
+[INFO] Finished at: 2020-04-06T16:56:15+08:00
+[INFO] ------------------------------------------------------------------------
+
+E:\Project\thingsboard-1>
